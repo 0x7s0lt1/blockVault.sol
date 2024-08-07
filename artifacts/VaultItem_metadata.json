@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getParent",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"VaultItem.sol": "VaultItem"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"VaultItem.sol": {
+			"keccak256": "0xf5c8251c829c003d9017fc4c594511c792c0ceff75eda5e2f590265a0892c3ab",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://fc0b5fd1331092ba084da10eeceda445b860e71d63640d957f98d6d7a1bf0f63",
+				"dweb:/ipfs/QmeVXAua6taMeh3YLZ5fzC8darj9fVA2pjWZcZVo96eQ5w"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,193 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_card_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name_on_card",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_expire_at",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cvv",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_parent",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCard",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getParent",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_card_id",
+						"type": "string"
+					}
+				],
+				"name": "setCardId",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "setName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_parent",
+						"type": "address"
+					}
+				],
+				"name": "setParent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DebitCard.sol": "DebitCard"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"DebitCard.sol": {
+			"keccak256": "0x92a3a9bffecab35dfdf9a4e65a0cdf11ac926e8111da9883c764ff6f36291f61",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://78d4c3de945696e64d53de9bd5f41ab7f7a0b89d1eb14f23143f52157e89d9f1",
+				"dweb:/ipfs/QmUztUn7JLUNXwVuC7U5fytJFZ7zmHWE7u7R9ycKbBZQnH"
+			]
+		},
+		"VaultItem.sol": {
+			"keccak256": "0xf5c8251c829c003d9017fc4c594511c792c0ceff75eda5e2f590265a0892c3ab",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://fc0b5fd1331092ba084da10eeceda445b860e71d63640d957f98d6d7a1bf0f63",
+				"dweb:/ipfs/QmeVXAua6taMeh3YLZ5fzC8darj9fVA2pjWZcZVo96eQ5w"
+			]
+		}
+	},
+	"version": 1
+}

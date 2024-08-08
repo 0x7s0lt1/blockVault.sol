@@ -48,20 +48,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "getAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getCard",
+				"name": "expose",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -87,6 +74,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -173,11 +173,11 @@
 	},
 	"sources": {
 		"DebitCard.sol": {
-			"keccak256": "0x92a3a9bffecab35dfdf9a4e65a0cdf11ac926e8111da9883c764ff6f36291f61",
+			"keccak256": "0x7174704bdae7251ee00fdeee0935f2db21ce148d5e0053193b255a593692069c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://78d4c3de945696e64d53de9bd5f41ab7f7a0b89d1eb14f23143f52157e89d9f1",
-				"dweb:/ipfs/QmUztUn7JLUNXwVuC7U5fytJFZ7zmHWE7u7R9ycKbBZQnH"
+				"bzz-raw://7688de83779bdfc9413c9f6a8f96149ea3269d114430f5109fa0bcb3a621b3fc",
+				"dweb:/ipfs/QmZC75h1zKG7yEp3VUmqizA5vK6jkGLBEdTnAxF3eRaQ7k"
 			]
 		},
 		"VaultItem.sol": {

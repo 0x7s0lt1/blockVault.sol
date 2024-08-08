@@ -51,6 +51,10 @@ contract DebitCard is VaultItem{
         return parent;
     }
 
+    function setParent( address _parent) external  ownerOnly {
+        parent = _parent;
+    }
+
     function setName(string memory _name) external ownerOnly {
         name = _name;
     }
@@ -58,12 +62,9 @@ contract DebitCard is VaultItem{
     function setCardId(string memory _card_id) external ownerOnly {
         card_id = _card_id;
     }
-    
-    function setParent( address _parent) external  ownerOnly {
-        parent = _parent;
-    }
 
-    function getCard() external view ownerOnly returns (string memory, string memory, string memory, string memory, uint) {
+
+    function expose() external view ownerOnly returns (string memory, string memory, string memory, string memory, uint) {
         return ( name, card_id, name_on_card, expire_at, cvv);
     }
 

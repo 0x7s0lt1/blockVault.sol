@@ -259,11 +259,11 @@
 			]
 		},
 		"UserVault.sol": {
-			"keccak256": "0x81b4f490befaa7cf627b29e1955af1eeb731ac4a4445eba79de949cef857157f",
+			"keccak256": "0x1cda86e23ca915f70d5c095042a98f842cb701f1168b620414847170536e3f11",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://ab82633c638283e7688816a99b633e69cd5ae740ed0a19fac8aa9afa36f0950d",
-				"dweb:/ipfs/QmPwCwx2dCjxZ2UWV2PSJXe9SUyLXkq2e5S9nm9Udqduat"
+				"bzz-raw://8f64ee6930f96253951e052ea062a50311b87282521357cf1f90684d820a9f25",
+				"dweb:/ipfs/QmPs49gcaZkf47n516E4d4R4ZoexTJKtKgudAKQam7byhs"
 			]
 		},
 		"VaultItem.sol": {

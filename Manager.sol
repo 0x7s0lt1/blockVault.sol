@@ -13,21 +13,16 @@ contract Manager{
         owner = msg.sender;
     }
 
-    modifier ownerOnly {
-        require(owner == msg.sender, "Only the owner can call this function!");
-        _;
+    function getVaultByOwner() external view returns (address) {
+
+        return ownerToVaultMap[msg.sender];
     }
 
-    function getVaultByOwner(address _addr) external view ownerOnly returns (address) {
-
-        return ownerToVaultMap[_addr];
-    }
-
-    function createVault() external ownerOnly returns (address) {
+    function createVault() external returns (address) {
 
         if( ownerToVaultMap[msg.sender] == address(0) ){
 
-            UserVault vault = new UserVault( msg.sender, address(this) );
+            UserVault vault = new UserVault( payable(msg.sender), address(this) );
             ownerToVaultMap[msg.sender] = vault.getAddress();
 
         }

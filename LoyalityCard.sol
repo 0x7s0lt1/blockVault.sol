@@ -36,6 +36,10 @@ contract LoyalityCard is VaultItem{
         return parent;
     }
 
+    function setParent( address _parnet) external  ownerOnly {
+        parent = _parnet;
+    }
+
     function setName(string memory _name) external ownerOnly {
         name = _name;
     }
@@ -43,12 +47,9 @@ contract LoyalityCard is VaultItem{
     function setCardId(string memory _card_id) external ownerOnly {
         card_id = _card_id;
     }
-    
-    function setParent( address _parnet) external  ownerOnly {
-        parent = _parnet;
-    }
 
-    function getCard() external view ownerOnly returns ( string memory, string memory) {
+
+    function expose() external view ownerOnly returns ( string memory, string memory) {
         return ( name, card_id );
     }
 

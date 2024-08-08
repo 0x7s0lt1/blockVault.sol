@@ -158,7 +158,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"DebitCard.sol": "DebitCard"
+			"Manager_flattened.sol": "DebitCard"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -166,26 +166,17 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"DebitCard.sol": {
-			"keccak256": "0x7174704bdae7251ee00fdeee0935f2db21ce148d5e0053193b255a593692069c",
-			"license": "GPL-3.0",
+		"Manager_flattened.sol": {
+			"keccak256": "0xe3b1450bf35b1010ab423b81b68e7c664dc937d48290d06c05f4232c58913b83",
 			"urls": [
-				"bzz-raw://7688de83779bdfc9413c9f6a8f96149ea3269d114430f5109fa0bcb3a621b3fc",
-				"dweb:/ipfs/QmZC75h1zKG7yEp3VUmqizA5vK6jkGLBEdTnAxF3eRaQ7k"
-			]
-		},
-		"VaultItem.sol": {
-			"keccak256": "0xf5c8251c829c003d9017fc4c594511c792c0ceff75eda5e2f590265a0892c3ab",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://fc0b5fd1331092ba084da10eeceda445b860e71d63640d957f98d6d7a1bf0f63",
-				"dweb:/ipfs/QmeVXAua6taMeh3YLZ5fzC8darj9fVA2pjWZcZVo96eQ5w"
+				"bzz-raw://3ad2215cdc2c9f07dd3b00e95cf711ea4df61391902bcb8456830d5efd018249",
+				"dweb:/ipfs/QmdwN1xQoNWWfk5XercfSaVgCPeMhfh1v67oj3DWicu2pA"
 			]
 		}
 	},

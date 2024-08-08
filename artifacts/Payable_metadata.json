@@ -78,7 +78,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Payable.sol": "Payable"
+			"Manager_flattened.sol": "Payable"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -86,18 +86,17 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"Payable.sol": {
-			"keccak256": "0x259ffaffc5e8fe1f053bb0bf3085a34be82cb5c3b911c66c5c03b54a05d89bca",
-			"license": "GPL-3.0",
+		"Manager_flattened.sol": {
+			"keccak256": "0xe3b1450bf35b1010ab423b81b68e7c664dc937d48290d06c05f4232c58913b83",
 			"urls": [
-				"bzz-raw://dcd9d1b1c49b4e6218c736071be87bc4df4abd28f51a335c97a0f06ac43a8446",
-				"dweb:/ipfs/QmQBGnkRuf2SUL1QJiBefzP7r2mAfky7xQQRsXy5Mwv264"
+				"bzz-raw://3ad2215cdc2c9f07dd3b00e95cf711ea4df61391902bcb8456830d5efd018249",
+				"dweb:/ipfs/QmdwN1xQoNWWfk5XercfSaVgCPeMhfh1v67oj3DWicu2pA"
 			]
 		}
 	},

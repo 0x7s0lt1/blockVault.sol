@@ -79,27 +79,36 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_item",
-						"type": "address"
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_url",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_user_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_password",
+						"type": "string"
 					}
 				],
-				"name": "deleteDebitItem",
+				"name": "createPassword",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_item",
-						"type": "address"
-					}
-				],
-				"name": "deleteLoyalityItem",
+				"inputs": [],
+				"name": "deposit",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -126,57 +135,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getItems",
-				"outputs": [
-					{
-						"components": [
-							{
-								"internalType": "address[]",
-								"name": "loyalityCards",
-								"type": "address[]"
-							},
-							{
-								"internalType": "address[]",
-								"name": "debitCards",
-								"type": "address[]"
-							}
-						],
-						"internalType": "struct UserVault.Items",
-						"name": "",
-						"type": "tuple"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_item",
-						"type": "address"
-					}
-				],
-				"name": "putDebitItem",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_item",
-						"type": "address"
-					}
-				],
-				"name": "putLoyalityItem",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -228,7 +186,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"UserVault.sol": "UserVault"
+			"Manager_flattened.sol": "UserVault"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -236,42 +194,17 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"DebitCard.sol": {
-			"keccak256": "0x92a3a9bffecab35dfdf9a4e65a0cdf11ac926e8111da9883c764ff6f36291f61",
-			"license": "GPL-3.0",
+		"Manager_flattened.sol": {
+			"keccak256": "0xe3b1450bf35b1010ab423b81b68e7c664dc937d48290d06c05f4232c58913b83",
 			"urls": [
-				"bzz-raw://78d4c3de945696e64d53de9bd5f41ab7f7a0b89d1eb14f23143f52157e89d9f1",
-				"dweb:/ipfs/QmUztUn7JLUNXwVuC7U5fytJFZ7zmHWE7u7R9ycKbBZQnH"
-			]
-		},
-		"LoyalityCard.sol": {
-			"keccak256": "0x2e90d82f978315a12cb1d163f702e73be64209528254804714c62cf8d45cdfb4",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://e78740b2c4d3098113c886fe0a5e9bbab085fa16fb7e5299187699b57971a6a3",
-				"dweb:/ipfs/QmZM68zEhPCkAG7xFAsE5ikuuRda1ohPYdKqbr1TdDiNsp"
-			]
-		},
-		"UserVault.sol": {
-			"keccak256": "0x1cda86e23ca915f70d5c095042a98f842cb701f1168b620414847170536e3f11",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://8f64ee6930f96253951e052ea062a50311b87282521357cf1f90684d820a9f25",
-				"dweb:/ipfs/QmPs49gcaZkf47n516E4d4R4ZoexTJKtKgudAKQam7byhs"
-			]
-		},
-		"VaultItem.sol": {
-			"keccak256": "0xf5c8251c829c003d9017fc4c594511c792c0ceff75eda5e2f590265a0892c3ab",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://fc0b5fd1331092ba084da10eeceda445b860e71d63640d957f98d6d7a1bf0f63",
-				"dweb:/ipfs/QmeVXAua6taMeh3YLZ5fzC8darj9fVA2pjWZcZVo96eQ5w"
+				"bzz-raw://3ad2215cdc2c9f07dd3b00e95cf711ea4df61391902bcb8456830d5efd018249",
+				"dweb:/ipfs/QmdwN1xQoNWWfk5XercfSaVgCPeMhfh1v67oj3DWicu2pA"
 			]
 		}
 	},

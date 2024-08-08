@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Utils.sol": "Utils"
+			"Manager_flattened.sol": "Utils"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -26,18 +26,17 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"Utils.sol": {
-			"keccak256": "0x17491c6946008027a48ba13743de786b79894ac093aef3f00fe43f898b5329b7",
-			"license": "GPL-3.0",
+		"Manager_flattened.sol": {
+			"keccak256": "0xe3b1450bf35b1010ab423b81b68e7c664dc937d48290d06c05f4232c58913b83",
 			"urls": [
-				"bzz-raw://f9ac7047d855b4b94700f74d13f292b7428ce4d7fe43bd942cc2f9430a30bef9",
-				"dweb:/ipfs/QmaqphZg9Ubr3mwhtVfEy4JEbAyiL3uzw6vhVFEddazqLc"
+				"bzz-raw://3ad2215cdc2c9f07dd3b00e95cf711ea4df61391902bcb8456830d5efd018249",
+				"dweb:/ipfs/QmdwN1xQoNWWfk5XercfSaVgCPeMhfh1v67oj3DWicu2pA"
 			]
 		}
 	},

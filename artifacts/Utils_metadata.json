@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Manager_flattened.sol": "Utils"
+			"UserVault_flattened.sol": "Utils"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,11 +32,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"Manager_flattened.sol": {
-			"keccak256": "0xe3b1450bf35b1010ab423b81b68e7c664dc937d48290d06c05f4232c58913b83",
+		"UserVault_flattened.sol": {
+			"keccak256": "0xf2e1673cad4a27b4dd9c8c6263735a1ab8162ec05007f97cf0684eac72597d54",
 			"urls": [
-				"bzz-raw://3ad2215cdc2c9f07dd3b00e95cf711ea4df61391902bcb8456830d5efd018249",
-				"dweb:/ipfs/QmdwN1xQoNWWfk5XercfSaVgCPeMhfh1v67oj3DWicu2pA"
+				"bzz-raw://53553933c8f7864afdf3095cc6ba2b2a628567f450b7a9561d917581af0c795b",
+				"dweb:/ipfs/QmTaCiyD1Gts62oz8iKi3TvnbZvPE4xkX8d1QTmYokri67"
 			]
 		}
 	},

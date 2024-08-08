@@ -8,7 +8,7 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
+						"internalType": "address payable",
 						"name": "_owner",
 						"type": "address"
 					},
@@ -20,6 +20,10 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
 			},
 			{
 				"inputs": [
@@ -113,6 +117,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getItems",
 				"outputs": [
 					{
@@ -161,6 +178,41 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "sendTo",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -207,11 +259,11 @@
 			]
 		},
 		"UserVault.sol": {
-			"keccak256": "0x35dfe35ad1599f356337d4109e06389ac871f89d1efb31f9d23c3f37f12b8a3f",
+			"keccak256": "0x81b4f490befaa7cf627b29e1955af1eeb731ac4a4445eba79de949cef857157f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://af0b10e9db01ffe6688abeec3ed5ec543bb9c386ba9f28f0b553fe15567e013b",
-				"dweb:/ipfs/QmfK2zBECxcQD1LvYNo9Wso7iWj4Mpkus5G8TEgUjuKFyq"
+				"bzz-raw://ab82633c638283e7688816a99b633e69cd5ae740ed0a19fac8aa9afa36f0950d",
+				"dweb:/ipfs/QmPwCwx2dCjxZ2UWV2PSJXe9SUyLXkq2e5S9nm9Udqduat"
 			]
 		},
 		"VaultItem.sol": {

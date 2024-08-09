@@ -43,8 +43,8 @@ contract UserVault is Payable{
         string memory _name,
         string memory _card_id,
         string memory _name_on_card,
-        uint8 _expire_at,
-        uint8 _cvv
+        uint16 _expire_at,
+        uint16 _cvv
     ) external ownerOnly {
 
         DebitCard card = new DebitCard( _name, _card_id, _name_on_card, _expire_at, _cvv, owner, address(this));

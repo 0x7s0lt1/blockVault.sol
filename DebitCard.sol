@@ -10,8 +10,8 @@ contract DebitCard is VaultItem{
     string name;
     string card_id;
     string name_on_card;
-    uint8 expire_at;
-    uint8 cvv;
+    uint16 expire_at;
+    uint16 cvv;
 
     address owner;
     address parent;
@@ -22,8 +22,8 @@ contract DebitCard is VaultItem{
         string memory _name,
         string memory _card_id,
         string memory _name_on_card,
-        uint8 _expire_at,
-        uint8 _cvv,
+        uint16 _expire_at,
+        uint16 _cvv,
         address _owner,
         address _parent
         )
@@ -84,19 +84,19 @@ contract DebitCard is VaultItem{
         emit Updated(msg.sender);
     }
 
-    function setExpireAt(uint8 _expire_at) external ownerOnly {
+    function setExpireAt(uint16 _expire_at) external ownerOnly {
         expire_at = _expire_at;
 
         emit Updated(msg.sender);
     }
 
-    function setCvv(uint8 _cvv) external ownerOnly {
+    function setCvv(uint16 _cvv) external ownerOnly {
         cvv = _cvv;
 
         emit Updated(msg.sender);
     }
 
-    function setItem(string memory _name, string memory _card_id, string memory _name_on_card, uint8 _expire_at, uint8 _cvv) external ownerOnly {
+    function setItem(string memory _name, string memory _card_id, string memory _name_on_card, uint16 _expire_at, uint16 _cvv) external ownerOnly {
 
         name = _name;
         card_id = _card_id;
@@ -107,7 +107,7 @@ contract DebitCard is VaultItem{
         emit Updated(msg.sender);
     }
 
-    function expose() external view ownerOnly returns (string memory, string memory, string memory, uint8, uint8) {
+    function expose() external view ownerOnly returns (string memory, string memory, string memory, uint16, uint16) {
         return ( name, card_id, name_on_card, expire_at, cvv );
     }
 

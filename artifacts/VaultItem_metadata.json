@@ -6,6 +6,58 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Created",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Updated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getItemType",
+				"outputs": [
+					{
+						"internalType": "enum Utils.ItemType",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "getParent",
 				"outputs": [
@@ -16,6 +68,32 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "setName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_parent",
+						"type": "address"
+					}
+				],
+				"name": "setParent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -32,7 +110,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Manager_flattened.sol": "VaultItem"
+			"VaultItem.sol": "VaultItem"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -46,11 +124,28 @@
 		"remappings": []
 	},
 	"sources": {
-		"Manager_flattened.sol": {
-			"keccak256": "0x8aa9919ea6213a51cff30d86db7873efa784559c9ae63d0d1dc81ac835f5f4c4",
+		"Payable.sol": {
+			"keccak256": "0x259ffaffc5e8fe1f053bb0bf3085a34be82cb5c3b911c66c5c03b54a05d89bca",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://836cae49d258ab56e417adb74a8cf8d2c3b0de4c2158e7c4805df93cb009bd9e",
-				"dweb:/ipfs/QmWteT7WpyMQWJucPHH9sp7QbQQ7SgQdTMURPy4tz2VeNF"
+				"bzz-raw://dcd9d1b1c49b4e6218c736071be87bc4df4abd28f51a335c97a0f06ac43a8446",
+				"dweb:/ipfs/QmQBGnkRuf2SUL1QJiBefzP7r2mAfky7xQQRsXy5Mwv264"
+			]
+		},
+		"Utils.sol": {
+			"keccak256": "0x03b136099285f9fde15eba25629951bf5a6f5ad8b9c5f3b0fcbe68ef0b4eb680",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d6bb0f9b9a910f47a14bacee92cf5a64fd332461494a3013f956266289581f8c",
+				"dweb:/ipfs/QmUbswrwY8tLoe55SihqynpP4S4bNTHZ5wkYjQYRV3TrB5"
+			]
+		},
+		"VaultItem.sol": {
+			"keccak256": "0xec7ea43d3a81e008667135596936dac701e41c3c5fff2482e8d98f6dd4042158",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bdb353db6852a3d45998f06d9dea1f8e24b47312223f897c070db715ca16afef",
+				"dweb:/ipfs/QmdcrLQEq1MXVDUuSoq35NQ8eRnqUMGbuDUCM628zN54Q9"
 			]
 		}
 	},

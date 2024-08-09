@@ -49,10 +49,66 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"getParent()": "80f76021"
+			"getAddress()": "38cc4831",
+			"getItemType()": "2858d3c8",
+			"getParent()": "80f76021",
+			"setName(string)": "c47f0027",
+			"setParent(address)": "1499c592"
 		}
 	},
 	"abi": [
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"name": "Created",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"name": "Updated",
+			"type": "event"
+		},
+		{
+			"inputs": [],
+			"name": "getAddress",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "getItemType",
+			"outputs": [
+				{
+					"internalType": "enum Utils.ItemType",
+					"name": "",
+					"type": "uint8"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
 		{
 			"inputs": [],
 			"name": "getParent",
@@ -64,6 +120,32 @@
 				}
 			],
 			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "string",
+					"name": "_name",
+					"type": "string"
+				}
+			],
+			"name": "setName",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_parent",
+					"type": "address"
+				}
+			],
+			"name": "setParent",
+			"outputs": [],
+			"stateMutability": "nonpayable",
 			"type": "function"
 		}
 	]

@@ -25,7 +25,7 @@ contract UserVault is Payable{
     }
 
      function getItem(Utils.ItemType _type) external view ownerOnly returns (address[] memory) {
-        
+
         require(Utils.isValidItemType(uint8(_type)), "Invalid Item type");
 
         return Utils.getItems(_type, Items);
@@ -43,8 +43,8 @@ contract UserVault is Payable{
         string memory _name,
         string memory _card_id,
         string memory _name_on_card,
-        string memory _expire_at,
-        uint _cvv
+        uint8 _expire_at,
+        uint8 _cvv
     ) external ownerOnly {
 
         DebitCard card = new DebitCard( _name, _card_id, _name_on_card, _expire_at, _cvv, owner, address(this));
@@ -71,7 +71,7 @@ contract UserVault is Payable{
         require(Utils.isValidItemType(uint8(_type)), "Invalid Item type");
         require(_addr != address(0), "Invalid address");
 
-        Utils.deleteItem(Items, _type, _addr );
+        Utils.deleteItem( Items, _type, _addr );
     }
 
 

@@ -23,14 +23,14 @@
 						"type": "string"
 					},
 					{
-						"internalType": "string",
+						"internalType": "uint8",
 						"name": "_expire_at",
-						"type": "string"
+						"type": "uint8"
 					},
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "_cvv",
-						"type": "uint256"
+						"type": "uint8"
 					},
 					{
 						"internalType": "address",
@@ -66,14 +66,14 @@
 						"type": "string"
 					},
 					{
-						"internalType": "string",
+						"internalType": "uint8",
 						"name": "",
-						"type": "string"
+						"type": "uint8"
 					},
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -121,12 +121,51 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint8",
+						"name": "_cvv",
+						"type": "uint8"
+					}
+				],
+				"name": "setCvv",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_expire_at",
+						"type": "uint8"
+					}
+				],
+				"name": "setExpireAt",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "string",
 						"name": "_name",
 						"type": "string"
 					}
 				],
 				"name": "setName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name_on_card",
+						"type": "string"
+					}
+				],
+				"name": "setNameOnCard",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -158,7 +197,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Manager_flattened.sol": "DebitCard"
+			"DebitCard.sol": "DebitCard"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -172,11 +211,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"Manager_flattened.sol": {
-			"keccak256": "0x8aa9919ea6213a51cff30d86db7873efa784559c9ae63d0d1dc81ac835f5f4c4",
+		"DebitCard.sol": {
+			"keccak256": "0x57454fccd60a088c97a20e706e670d03a13e760487c61efa1edfab6ee5009b89",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://836cae49d258ab56e417adb74a8cf8d2c3b0de4c2158e7c4805df93cb009bd9e",
-				"dweb:/ipfs/QmWteT7WpyMQWJucPHH9sp7QbQQ7SgQdTMURPy4tz2VeNF"
+				"bzz-raw://2c5b22ed56833a1b385ec3ab1b47b27b06a23ae6e6f82aa4a004faf083d950c7",
+				"dweb:/ipfs/QmcFFtPFxBKFUn7CNGsXxRxHubnA1ag5r3PaPZwHVF45Q9"
+			]
+		},
+		"VaultItem.sol": {
+			"keccak256": "0xf5c8251c829c003d9017fc4c594511c792c0ceff75eda5e2f590265a0892c3ab",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://fc0b5fd1331092ba084da10eeceda445b860e71d63640d957f98d6d7a1bf0f63",
+				"dweb:/ipfs/QmeVXAua6taMeh3YLZ5fzC8darj9fVA2pjWZcZVo96eQ5w"
 			]
 		}
 	},

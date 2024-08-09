@@ -94,6 +94,24 @@
 						"internalType": "string",
 						"name": "_name",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_card_id",
+						"type": "string"
+					}
+				],
+				"name": "setItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
 					}
 				],
 				"name": "setName",
@@ -143,11 +161,11 @@
 	},
 	"sources": {
 		"LoyalityCard.sol": {
-			"keccak256": "0x4147a0a061edfc8bb8951661811d7f24e6e370987cc4b49b3472110b06ddc3f3",
+			"keccak256": "0x15c79b6e066b222512374d836aa0c7b843d1543a5b2b5b923b37d48b7f6ce071",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f4215ed4380b1d333adae5751677da91aa1436228a98df61a00bc19e946d4621",
-				"dweb:/ipfs/QmaXwBxfiATjVREhh9A7eq6C84Rw9WLCcVnxx1BWQPZqGu"
+				"bzz-raw://deae07031b1fe1f8dc1438b758695e1ce6496679bf9a6ee9b43cbd4dcaaf124a",
+				"dweb:/ipfs/QmSu5FEEHig7HebY1D5iQsiLHxhgU96cv4fdmYa6B8RNM1"
 			]
 		},
 		"VaultItem.sol": {

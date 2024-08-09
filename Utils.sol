@@ -44,7 +44,7 @@ library Utils{
             _items[_type][i] = _items[_type][i + 1];
         }
 
-        _items[_type].pop(); 
+        _items[_type].pop();
 
     }
 

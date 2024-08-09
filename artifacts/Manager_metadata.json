@@ -65,10 +65,10 @@
 	},
 	"sources": {
 		"Manager_flattened.sol": {
-			"keccak256": "0xe3b1450bf35b1010ab423b81b68e7c664dc937d48290d06c05f4232c58913b83",
+			"keccak256": "0x8aa9919ea6213a51cff30d86db7873efa784559c9ae63d0d1dc81ac835f5f4c4",
 			"urls": [
-				"bzz-raw://3ad2215cdc2c9f07dd3b00e95cf711ea4df61391902bcb8456830d5efd018249",
-				"dweb:/ipfs/QmdwN1xQoNWWfk5XercfSaVgCPeMhfh1v67oj3DWicu2pA"
+				"bzz-raw://836cae49d258ab56e417adb74a8cf8d2c3b0de4c2158e7c4805df93cb009bd9e",
+				"dweb:/ipfs/QmWteT7WpyMQWJucPHH9sp7QbQQ7SgQdTMURPy4tz2VeNF"
 			]
 		}
 	},

@@ -8,6 +8,10 @@ library Utils{
 
     enum ItemType{ LOYALITY_CARD, DEBIT_CARD, PASSWORD }
 
+    function isValidItemType(uint8 _type) internal pure returns (bool) {
+        return _type < uint8(ItemType.PASSWORD) + 1;
+    } 
+
     function findIndex(address _value, address[] memory _array) internal pure returns (int) {
         for (uint i = 0; i < _array.length; i++) {
             if (_array[i] == _value) {
@@ -17,7 +21,7 @@ library Utils{
         return -1; 
     }
 
-    function getItems( mapping (ItemType => address[]) storage _items) public view returns (address[][3] memory) {
+    function getAllItems( mapping (ItemType => address[]) storage _items) public view returns (address[][3] memory) {
 
         return [
             _items[ItemType.LOYALITY_CARD],
@@ -26,7 +30,12 @@ library Utils{
         ];
     }
 
-    function deleteItem( mapping (ItemType => address[]) storage _items, address _item, ItemType _type) public {
+    function getItems( ItemType _type, mapping (ItemType => address[]) storage _items ) public view returns (address[] memory) {
+
+        return _items[_type];
+    }
+
+    function deleteItem( mapping (ItemType => address[]) storage _items, ItemType _type, address _item ) public {
 
         int index = Utils.findIndex(_item, _items[_type]);
         require(index > -1 && index < int(_items[_type].length), "Item not found in array");

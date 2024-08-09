@@ -20,6 +20,17 @@ contract UserVault is Payable{
         return address(this);
     }
 
+    function getAllItems() external view ownerOnly returns (address[][3] memory) {
+        return Utils.getAllItems(Items);
+    }
+
+     function getItem(Utils.ItemType _type) external view ownerOnly returns (address[] memory) {
+        
+        require(Utils.isValidItemType(uint8(_type)), "Invalid Item type");
+
+        return Utils.getItems(_type, Items);
+    }
+
     function createLoyalityCard(string memory _name, string memory _card_id) external ownerOnly {
 
         LoyalityCard card = new LoyalityCard( _name, _card_id, owner, address(this) );
@@ -53,6 +64,14 @@ contract UserVault is Payable{
 
         Items[Utils.ItemType.PASSWORD].push( psw.getAddress() );
         
+    }
+
+    function deleteItem(Utils.ItemType _type, address _addr) external ownerOnly {
+
+        require(Utils.isValidItemType(uint8(_type)), "Invalid Item type");
+        require(_addr != address(0), "Invalid address");
+
+        Utils.deleteItem(Items, _type, _addr );
     }
 
 

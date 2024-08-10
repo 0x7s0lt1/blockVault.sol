@@ -23,14 +23,14 @@
 						"type": "string"
 					},
 					{
-						"internalType": "uint8",
+						"internalType": "uint16",
 						"name": "_expire_at",
-						"type": "uint8"
+						"type": "uint16"
 					},
 					{
-						"internalType": "uint8",
+						"internalType": "uint16",
 						"name": "_cvv",
-						"type": "uint8"
+						"type": "uint16"
 					},
 					{
 						"internalType": "address",
@@ -45,6 +45,32 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Created",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Updated",
+				"type": "event"
 			},
 			{
 				"inputs": [],
@@ -66,14 +92,14 @@
 						"type": "string"
 					},
 					{
-						"internalType": "uint8",
+						"internalType": "uint16",
 						"name": "",
-						"type": "uint8"
+						"type": "uint16"
 					},
 					{
-						"internalType": "uint8",
+						"internalType": "uint16",
 						"name": "",
-						"type": "uint8"
+						"type": "uint16"
 					}
 				],
 				"stateMutability": "view",
@@ -87,6 +113,19 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getItemType",
+				"outputs": [
+					{
+						"internalType": "enum Utils.ItemType",
+						"name": "",
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -121,9 +160,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint8",
+						"internalType": "uint16",
 						"name": "_cvv",
-						"type": "uint8"
+						"type": "uint16"
 					}
 				],
 				"name": "setCvv",
@@ -134,12 +173,45 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint8",
+						"internalType": "uint16",
 						"name": "_expire_at",
-						"type": "uint8"
+						"type": "uint16"
 					}
 				],
 				"name": "setExpireAt",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_card_id",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name_on_card",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_expire_at",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_cvv",
+						"type": "uint16"
+					}
+				],
+				"name": "setItem",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -197,7 +269,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"DebitCard.sol": "DebitCard"
+			"Manager_flattened.sol": "DebitCard"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -211,20 +283,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"DebitCard.sol": {
-			"keccak256": "0x57454fccd60a088c97a20e706e670d03a13e760487c61efa1edfab6ee5009b89",
-			"license": "GPL-3.0",
+		"Manager_flattened.sol": {
+			"keccak256": "0xa9e3d07065ce220a2f8270663f16144af5aff7001087ca7cdd45553076873189",
 			"urls": [
-				"bzz-raw://2c5b22ed56833a1b385ec3ab1b47b27b06a23ae6e6f82aa4a004faf083d950c7",
-				"dweb:/ipfs/QmcFFtPFxBKFUn7CNGsXxRxHubnA1ag5r3PaPZwHVF45Q9"
-			]
-		},
-		"VaultItem.sol": {
-			"keccak256": "0xf5c8251c829c003d9017fc4c594511c792c0ceff75eda5e2f590265a0892c3ab",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://fc0b5fd1331092ba084da10eeceda445b860e71d63640d957f98d6d7a1bf0f63",
-				"dweb:/ipfs/QmeVXAua6taMeh3YLZ5fzC8darj9fVA2pjWZcZVo96eQ5w"
+				"bzz-raw://c90ed6129037ebee91bbfa6033d79fa439262af7bb5eabcc41b39c42b5fcc33d",
+				"dweb:/ipfs/QmQXmMZnquW1ef3WvwLcdQGAoaDdhGBEYGmMGkgwFKAWbL"
 			]
 		}
 	},

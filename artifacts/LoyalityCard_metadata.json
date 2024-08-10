@@ -32,6 +32,32 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Created",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Updated",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "expose",
 				"outputs": [
@@ -57,6 +83,19 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getItemType",
+				"outputs": [
+					{
+						"internalType": "enum Utils.ItemType",
+						"name": "",
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -146,7 +185,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"LoyalityCard.sol": "LoyalityCard"
+			"Manager_flattened.sol": "LoyalityCard"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -160,20 +199,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"LoyalityCard.sol": {
-			"keccak256": "0x15c79b6e066b222512374d836aa0c7b843d1543a5b2b5b923b37d48b7f6ce071",
-			"license": "GPL-3.0",
+		"Manager_flattened.sol": {
+			"keccak256": "0xa9e3d07065ce220a2f8270663f16144af5aff7001087ca7cdd45553076873189",
 			"urls": [
-				"bzz-raw://deae07031b1fe1f8dc1438b758695e1ce6496679bf9a6ee9b43cbd4dcaaf124a",
-				"dweb:/ipfs/QmSu5FEEHig7HebY1D5iQsiLHxhgU96cv4fdmYa6B8RNM1"
-			]
-		},
-		"VaultItem.sol": {
-			"keccak256": "0xf5c8251c829c003d9017fc4c594511c792c0ceff75eda5e2f590265a0892c3ab",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://fc0b5fd1331092ba084da10eeceda445b860e71d63640d957f98d6d7a1bf0f63",
-				"dweb:/ipfs/QmeVXAua6taMeh3YLZ5fzC8darj9fVA2pjWZcZVo96eQ5w"
+				"bzz-raw://c90ed6129037ebee91bbfa6033d79fa439262af7bb5eabcc41b39c42b5fcc33d",
+				"dweb:/ipfs/QmQXmMZnquW1ef3WvwLcdQGAoaDdhGBEYGmMGkgwFKAWbL"
 			]
 		}
 	},

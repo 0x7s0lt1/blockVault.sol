@@ -7,10 +7,23 @@ import "./UserVault.sol";
 contract Manager{
 
     address owner;
+    address parent;
+
     mapping (address => address) ownerToVaultMap;
 
-    constructor(){
+    constructor(address _parent){
         owner = msg.sender;
+        parent = _parent;
+    }
+
+    modifier ownerOnly{
+        require(msg.sender == owner || msg.sender == parent, "Only the owner can call this function");
+        _;
+    }
+
+    function getAddress() external view ownerOnly returns (address) {
+
+        return address(this);
     }
 
     function getVaultByOwner() external view returns (address) {

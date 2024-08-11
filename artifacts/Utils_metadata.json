@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Manager_flattened.sol": "Utils"
+			"Utils.sol": "Utils"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,11 +32,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"Manager_flattened.sol": {
-			"keccak256": "0xa9e3d07065ce220a2f8270663f16144af5aff7001087ca7cdd45553076873189",
+		"Payable.sol": {
+			"keccak256": "0x259ffaffc5e8fe1f053bb0bf3085a34be82cb5c3b911c66c5c03b54a05d89bca",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c90ed6129037ebee91bbfa6033d79fa439262af7bb5eabcc41b39c42b5fcc33d",
-				"dweb:/ipfs/QmQXmMZnquW1ef3WvwLcdQGAoaDdhGBEYGmMGkgwFKAWbL"
+				"bzz-raw://dcd9d1b1c49b4e6218c736071be87bc4df4abd28f51a335c97a0f06ac43a8446",
+				"dweb:/ipfs/QmQBGnkRuf2SUL1QJiBefzP7r2mAfky7xQQRsXy5Mwv264"
+			]
+		},
+		"Utils.sol": {
+			"keccak256": "0x979e3f6bf5e48f84ec1793f97fcca0330ce6e1ff2df768b3ae7e1b3127296b74",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://0cfe1a5b897af68086ef8ce8defdc48d39d69a40b16ffc209447fa3d03b48fe2",
+				"dweb:/ipfs/QmQhUnm4o5XQzFveCApaz4LqU5ekLFVmiZPXhpkBxXAumY"
 			]
 		}
 	},

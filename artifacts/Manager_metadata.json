@@ -6,7 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_parent",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -81,11 +87,11 @@
 			]
 		},
 		"Manager.sol": {
-			"keccak256": "0x0a3b2fceec35077982a6f7775d9be351b16590a0d6b7b6a2be4c919c3ca21336",
+			"keccak256": "0x6e3daf1f77ca3b76a5b6c9cd9745f29a5c3b28bc660ca9d38f8c0c3e0ca0c86a",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://870bf4688a5bfe18212a9842874b7ab9a8e0869c7ee2c485f42c85959908b2f5",
-				"dweb:/ipfs/QmVBrGbAmi1dF3kSjaU7Wb9XiFoJxJQPWExKg5J1VDk8hC"
+				"bzz-raw://a18990dad9c93e285f8e497e3c190b580b4a92783b66ea8b60acc8c439905c12",
+				"dweb:/ipfs/QmasLijRxtTm6ysw6AS8uYbLAXDAKfW7ixSrMsVCTkx9XL"
 			]
 		},
 		"Password.sol": {

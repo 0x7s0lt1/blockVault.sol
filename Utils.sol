@@ -8,6 +8,11 @@ library Utils{
 
     enum ItemType{ LOYALITY_CARD, DEBIT_CARD, PASSWORD }
 
+    struct OrgMember {
+        string name;
+        address addr;
+    }
+
     function isValidItemType(uint8 _type) internal pure returns (bool) {
         return _type < uint8(ItemType.PASSWORD) + 1;
     } 
@@ -46,6 +51,15 @@ library Utils{
 
         _items[_type].pop();
 
+    }
+
+    function findOrgMember(address _value, OrgMember[] memory _array) internal pure returns (int) {
+        for (uint i = 0; i < _array.length; i++) {
+            if (_array[i].addr == _value) {
+                return int(i);
+            }
+        }
+        return -1; 
     }
 
 }

@@ -6,12 +6,14 @@ import "./LoyalityCard.sol";
 import "./DebitCard.sol";
 import "./Password.sol";
 import "./Payable.sol";
+import "./Organisation.sol";
 import "./Utils.sol";
 
 contract UserVault is Payable{
 
 
     mapping (Utils.ItemType => address[]) Items;
+    address[] Organisations;
 
     constructor(address payable _owner, address _manager) Payable( _owner, _manager) {}
 
@@ -72,6 +74,19 @@ contract UserVault is Payable{
         require(_addr != address(0), "Invalid address");
 
         Utils.deleteItem( Items, _type, _addr );
+    }
+
+    function getOrganisations() external view ownerOnly returns (address[] memory) {
+        
+        return Organisations;
+    }
+
+    function createOrganisation(string memory _name) external ownerOnly {
+
+        Organisation org = new Organisation( _name, owner, address(this));
+
+        Organisations.push( org.getAddress() );
+
     }
 
 

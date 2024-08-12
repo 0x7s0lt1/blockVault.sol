@@ -19,11 +19,6 @@ contract Vault is Payable{
     constructor(address payable _owner, address _manager) Payable( _owner, _manager) {}
     
 
-    function getAllItems() external view ownerOnly returns (address[][3] memory) {
-
-        return VaultUtils.getAllItems(Items);
-    }
-
      function getItem(Constants.ItemType _type) external view ownerOnly returns (address[] memory) {
         return VaultUtils.getItems(_type, Items);
     }

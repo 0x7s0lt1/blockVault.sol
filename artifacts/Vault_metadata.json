@@ -144,19 +144,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "getAllItems",
-				"outputs": [
-					{
-						"internalType": "address[][3]",
-						"name": "",
-						"type": "address[][3]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "getBalance",
 				"outputs": [
 					{
@@ -296,11 +283,11 @@
 			]
 		},
 		"Items/VaultItem.sol": {
-			"keccak256": "0xbd49f3bb5881726e29ecde75d06bf830caccec7fec7843b97ce408cfd2cc6eaa",
+			"keccak256": "0x4f5996db64955fcb18cc65a7e5839ffa2d92cdf3f376aed10586551a78882791",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://33173a70c02ae497f8b56c113fe016cca97d71c43e01bbfa411e5ee66b1e5848",
-				"dweb:/ipfs/QmZooC8rMQp74GzDBXxVRTkDikNgHRF5MkB3icoh1vkVnT"
+				"bzz-raw://d475e098915743d67fc9f9610353dee043b4dc25fb18e1be5137490b6c66463e",
+				"dweb:/ipfs/QmbaNceoeXLvujbuTaTZkA6MKvre4RKpeToTwuLQUxaaZD"
 			]
 		},
 		"Libs/Constants.sol": {
@@ -328,11 +315,11 @@
 			]
 		},
 		"Organisation.sol": {
-			"keccak256": "0x14a914d6f27a8160920d2b1dc600741b7ca45bf71b76c2c1e806d46ffe736a03",
+			"keccak256": "0x1f8e65bd8713756c9814f2ad080523e02d302bba28f368955a83e79fcbe43e69",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://1057e6b42717e65d8568e07fe8950d4b2c55eb9267cc7f0b10202fa0251968a3",
-				"dweb:/ipfs/QmYimCf7UqFBwuT9mnqwqcz97srkhyBRNhFq1qSVxjYNj1"
+				"bzz-raw://4346ad085953e7e7f824cb79bccb10bcd933bb13d64e6bf15fe5fa57e2ab9e2a",
+				"dweb:/ipfs/QmdBJjHZ4q33roYARnsMP44ciavRf3E4oqpxFp56xj5P6N"
 			]
 		},
 		"Payable.sol": {
@@ -344,11 +331,11 @@
 			]
 		},
 		"Vault.sol": {
-			"keccak256": "0xa25b5756e507bf24eefb287b5c1b0258e9f6465075265593e6eab80ecae63270",
+			"keccak256": "0x91e4f3ad60e7c7f7fefdb57a2422404900f948149c03b10cc9cb224dcd8a6b0f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2907c953035a37e75647f6330a90b7d48ca6ac41587fefca5f6a997f53bda1c2",
-				"dweb:/ipfs/QmNstYMuoZN6fLz9pRShXsq5wK13Wgp73ysM7HtHZhYLeG"
+				"bzz-raw://9239243f9278ac276665737e959cb0afc2d9b84531a6aa5d4e15a90bb39bc233",
+				"dweb:/ipfs/QmfE3HH3FANNUtQZzMyGQmBhFQ1vdnwB6epAEERAGJoqrR"
 			]
 		}
 	},

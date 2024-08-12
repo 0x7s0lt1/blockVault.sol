@@ -16,6 +16,7 @@ contract Manager{
         parent = _parent;
     }
 
+
     function getVaultByOwner() external view returns (address) {
 
         return ownerToVaultMap[msg.sender];

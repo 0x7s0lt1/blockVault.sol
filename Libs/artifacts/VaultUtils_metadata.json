@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Libs/VaultUtils.sol": "VaultUtils"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Libs/Constants.sol": {
+			"keccak256": "0x386732f1989ba08535f2a8c9798d01b0b47802b06bda10d94f88e85b497f48c2",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://02bf3bc558c6349c87ba4014cf7b918e7ac1704e58982f8cb75879e62788d6db",
+				"dweb:/ipfs/Qme1Q7W9QwSBBDbPCoyZtfEt4ggxzfBzJRPz6s9LKuMvuU"
+			]
+		},
+		"Libs/VaultUtils.sol": {
+			"keccak256": "0x7f9e71a7a35d09ee5da2a0d5e27fe7a9234c0a10007280d8305a68710de98fb5",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1cf2c8e4dd28e02d705459e9acd6073b4f15220b93b43c6604ed23e08edb301a",
+				"dweb:/ipfs/QmNYHuB3BDi9CsZ4mHh1vhYFCpugUYw7bZEwXYHZX5xHSb"
+			]
+		}
+	},
+	"version": 1
+}

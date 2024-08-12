@@ -67,7 +67,33 @@
 					"type": "address"
 				}
 			],
+			"name": "AddedToOrganisation",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
 			"name": "Created",
+			"type": "event"
+		},
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"name": "RemovedFromOrganisation",
 			"type": "event"
 		},
 		{
@@ -101,7 +127,7 @@
 			"name": "getItemType",
 			"outputs": [
 				{
-					"internalType": "enum Utils.ItemType",
+					"internalType": "enum Constants.ItemType",
 					"name": "",
 					"type": "uint8"
 				}

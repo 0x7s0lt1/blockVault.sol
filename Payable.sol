@@ -14,7 +14,7 @@ abstract contract Payable{
     }
 
     modifier ownerOnly{
-        require(msg.sender == owner || msg.sender == manager, "Only the owner or the manager can call this function");
+        require(msg.sender == owner || msg.sender == manager, "Only owner");
         _;
     }
 
@@ -30,21 +30,21 @@ abstract contract Payable{
     }
 
     function withdraw( uint _amount) external payable ownerOnly {
-        require(address(this).balance >= _amount, "Insufficient funds");
+        require(address(this).balance >= _amount, "Insufficient");
 
         (bool success, ) = owner.call{value: _amount}("");
         
-        require(success, "Failed to send Ether");
+        require(success, "Failed");
 
     }
 
     function sendTo(address payable _to, uint _amount) external payable ownerOnly {
         require(_to != address(0), "Invalid address");
-        require(address(this).balance >= _amount, "Insufficient funds");
+        require(address(this).balance >= _amount, "Insufficient");
 
         (bool success, ) = _to.call{value: _amount}("");
         
-        require(success, "Failed to send Ether");
+        require(success, "Failed");
     }
 
 

@@ -15,7 +15,33 @@
 						"type": "address"
 					}
 				],
+				"name": "AddedToOrganisation",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
 				"name": "Created",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "RemovedFromOrganisation",
 				"type": "event"
 			},
 			{
@@ -49,7 +75,7 @@
 				"name": "getItemType",
 				"outputs": [
 					{
-						"internalType": "enum Utils.ItemType",
+						"internalType": "enum Constants.ItemType",
 						"name": "",
 						"type": "uint8"
 					}
@@ -110,7 +136,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Manager_flattened.sol": "VaultItem"
+			"VaultItem.sol": "VaultItem"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -124,11 +150,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"Manager_flattened.sol": {
-			"keccak256": "0xa9e3d07065ce220a2f8270663f16144af5aff7001087ca7cdd45553076873189",
+		"Libs/Constants.sol": {
+			"keccak256": "0x4bd66bab23283d8e664e97d5248f13c05793ddd2d81327db94e6a13658e5b5bd",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c90ed6129037ebee91bbfa6033d79fa439262af7bb5eabcc41b39c42b5fcc33d",
-				"dweb:/ipfs/QmQXmMZnquW1ef3WvwLcdQGAoaDdhGBEYGmMGkgwFKAWbL"
+				"bzz-raw://62150c4d41ab5191db81e50f0f956ffbc4964ec5f30062156fa76cba1a964869",
+				"dweb:/ipfs/QmVjvy5E2i9b8HpTa2EGPJRxKgeqQHPATn8hmTBwGPHQMZ"
+			]
+		},
+		"VaultItem.sol": {
+			"keccak256": "0xb77ffaa081f44472246d28046521ef532099fe2ea1fadec5a7154f1d26d3d68c",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://cec092c9a09824a0f4fee0a3b7070cc051ed8ec1d8f1a8600e52b717db7108ce",
+				"dweb:/ipfs/QmNkJA1fArtUV491KDzSFEN8fdr8B3boqC3xc3XnZf41H5"
 			]
 		}
 	},

@@ -109,11 +109,19 @@
 			]
 		},
 		"Manager.sol": {
-			"keccak256": "0x450ee9c930b7dfd8de6c22b83cfee14634d8984d06abc7aeba5968b66d7bb155",
+			"keccak256": "0xbfb1ec3693fe33531ea2240811a057847c3c23b916ea366d0bd28247697e719b",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c4a4d6be07f994202302596feb7d7b9dba70b781c2e45c351b7383cee9ae20b9",
-				"dweb:/ipfs/QmTVfxKEuKnQ39BZqoRMMy7xxLUkYBhzFEZhD2gRRQEoPh"
+				"bzz-raw://b6a6f68654f7a7ec93c0993b70c9720423a4ab3b0d101e0b94a74085fa6e4666",
+				"dweb:/ipfs/QmWEPoDy9NbeaCtfvP4xEB9vioczbp3YDAXXQMVcmmVgwk"
+			]
+		},
+		"Organisation.sol": {
+			"keccak256": "0xfa452ea1b874ed3511b3378d88db7d861f4f5370db1c93dc0668ead195aa9840",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://b9fcd4e1cbc4730e6f684901d9f66619af2690f853767ab66c2728cad891cd08",
+				"dweb:/ipfs/QmbnjsWTjcAkxFW8BkcyfUor5ud6Z8LpRcivKkzSiNNkjj"
 			]
 		},
 		"Password.sol": {
@@ -133,19 +141,19 @@
 			]
 		},
 		"UserVault.sol": {
-			"keccak256": "0x374681eb5f3c8f9878350e7675c61930d269dec7fb0bda00dc01558559852fd1",
+			"keccak256": "0xefe7466056c4b80b2817da8880261b675befd543daadbf8d51c38457a3f01426",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0322f270282a8068853b9b8bc31f759b72219a91abae5047a1c5f267153c50ea",
-				"dweb:/ipfs/Qmc1mm2UScH2Pw62SU3T5C8gDtdrgGKt9PyRm7VHgod79q"
+				"bzz-raw://a60f94f9a607a36e757bbf720e716c3779ae21a2e79356907372ced4637105cb",
+				"dweb:/ipfs/QmSAfmm3kgEUS15RAv3AAvgtPJK9E1DRQQ7tJdvVtmdV3A"
 			]
 		},
 		"Utils.sol": {
-			"keccak256": "0xb5909ae8406d105e062f20ac220fd8466aef3eff57baa5caefe0bfef848566e6",
+			"keccak256": "0x73f43b9b448b63e307cc20653c9474c9378cdf01c84c88c58c7c2cd1e922551a",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://16c46ba0225d607d9a7210f5a1f996f4f04812fbada1178756b298413b8ea0c0",
-				"dweb:/ipfs/Qmc1ah6VHiyBPrG7mwgFonJCPjGWbTpUQzTUArPitjJNZ8"
+				"bzz-raw://1f11e15e73e1adf1cb4e97ae02644d3b40095fff7b4df1eaa44f805d1f491e9d",
+				"dweb:/ipfs/QmTxsaZEDPDSqsxjPc8etBihGzDnJHNZ7p8Fb3M1ZbnCui"
 			]
 		},
 		"VaultItem.sol": {

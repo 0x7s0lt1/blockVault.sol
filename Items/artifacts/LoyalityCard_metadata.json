@@ -1,0 +1,236 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_card_id",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_parent",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Created",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Updated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "expose",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getItemType",
+				"outputs": [
+					{
+						"internalType": "enum Constants.ItemType",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getParent",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_card_id",
+						"type": "string"
+					}
+				],
+				"name": "setCardId",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_card_id",
+						"type": "string"
+					}
+				],
+				"name": "setItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "setName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_parnet",
+						"type": "address"
+					}
+				],
+				"name": "setParent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Items/LoyalityCard.sol": "LoyalityCard"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Items/LoyalityCard.sol": {
+			"keccak256": "0x03a72bc07621c16db97ec3402a2f6074bbbd58df97e5f3db8e3622b1a561d4e6",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://2db3e8841a15007b4bb2056b1f9b1bc17cdf1e5c8d53a45604703b3ee4019a7c",
+				"dweb:/ipfs/QmcDyQwUjzkhbQAXitBycyb6Sa5EqpRyBAeUiDx36qVnKz"
+			]
+		},
+		"Libs/Constants.sol": {
+			"keccak256": "0x7ae14f7872e672ff504992c939464af18083ab5adff2451231bc8b0cb7c24359",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a11843fc26eb0fdb762b2cc8774a22c99b51a0b318e2d177451d6bf014e5dd63",
+				"dweb:/ipfs/QmYFSaoKuCDqhjayqZGTefnGKPndrRX5vXc5mUFgZUd2Ht"
+			]
+		},
+		"Libs/ItemUtils.sol": {
+			"keccak256": "0x7ee3ee73ca55d24e49cbd5505e329dd559d9c872b1979d30c63c1cddae5c44fc",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://9c59cd376935a36fbac8927ecb3c2aa97bc35dd686d18f70d8688a7cdf3203a4",
+				"dweb:/ipfs/QmfRPzQWZnd3QmkmVR8meoQqaDc1c2gXs5nUDPyj64NAJg"
+			]
+		},
+		"VaultItem.sol": {
+			"keccak256": "0x72062922bc1666c4fdbdbee017f3eac15a1ecad614104a29125a4998a7418265",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://915b402c01cf0f41588a36dc6c70cbc128910ec6c01adb3d3c9e5c0170710c7d",
+				"dweb:/ipfs/QmNkN2zzxJeJVwiDR8L8azLtYA3E1fv6eiGiyX94tyB3tQ"
+			]
+		}
+	},
+	"version": 1
+}

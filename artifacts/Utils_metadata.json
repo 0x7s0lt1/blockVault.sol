@@ -41,11 +41,11 @@
 			]
 		},
 		"Utils.sol": {
-			"keccak256": "0x979e3f6bf5e48f84ec1793f97fcca0330ce6e1ff2df768b3ae7e1b3127296b74",
+			"keccak256": "0x73f43b9b448b63e307cc20653c9474c9378cdf01c84c88c58c7c2cd1e922551a",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0cfe1a5b897af68086ef8ce8defdc48d39d69a40b16ffc209447fa3d03b48fe2",
-				"dweb:/ipfs/QmQhUnm4o5XQzFveCApaz4LqU5ekLFVmiZPXhpkBxXAumY"
+				"bzz-raw://1f11e15e73e1adf1cb4e97ae02644d3b40095fff7b4df1eaa44f805d1f491e9d",
+				"dweb:/ipfs/QmTxsaZEDPDSqsxjPc8etBihGzDnJHNZ7p8Fb3M1ZbnCui"
 			]
 		}
 	},

@@ -59,19 +59,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "getAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "getItemType",
 				"outputs": [
 					{
@@ -113,7 +100,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_parent",
+						"name": "_parnet",
 						"type": "address"
 					}
 				],
@@ -136,7 +123,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"VaultItem.sol": "VaultItem"
+			"Manager_flattened.sol": "VaultItem"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -150,20 +137,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"Libs/Constants.sol": {
-			"keccak256": "0x4bd66bab23283d8e664e97d5248f13c05793ddd2d81327db94e6a13658e5b5bd",
-			"license": "GPL-3.0",
+		"Manager_flattened.sol": {
+			"keccak256": "0x524ffd2d9a6a6e91dbe444cf72d7731dd4f0efc289e7c8a6245aecebf00fb81f",
 			"urls": [
-				"bzz-raw://62150c4d41ab5191db81e50f0f956ffbc4964ec5f30062156fa76cba1a964869",
-				"dweb:/ipfs/QmVjvy5E2i9b8HpTa2EGPJRxKgeqQHPATn8hmTBwGPHQMZ"
-			]
-		},
-		"VaultItem.sol": {
-			"keccak256": "0xb77ffaa081f44472246d28046521ef532099fe2ea1fadec5a7154f1d26d3d68c",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://cec092c9a09824a0f4fee0a3b7070cc051ed8ec1d8f1a8600e52b717db7108ce",
-				"dweb:/ipfs/QmNkJA1fArtUV491KDzSFEN8fdr8B3boqC3xc3XnZf41H5"
+				"bzz-raw://6b42ea4b0be4630dfa2e002b532b2fa9fe55aa332199dd87b5e09c63de746ae2",
+				"dweb:/ipfs/QmQ25Kq6oKYK7uYxLkz6t1JBd35HmTmF8RX4sdBPc4JAPF"
 			]
 		}
 	},

@@ -56,7 +56,33 @@
 						"type": "address"
 					}
 				],
+				"name": "AddedToOrganisation",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
 				"name": "Created",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "RemovedFromOrganisation",
 				"type": "event"
 			},
 			{
@@ -107,23 +133,10 @@
 			},
 			{
 				"inputs": [],
-				"name": "getAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "getItemType",
 				"outputs": [
 					{
-						"internalType": "enum Utils.ItemType",
+						"internalType": "enum Constants.ItemType",
 						"name": "",
 						"type": "uint8"
 					}
@@ -246,7 +259,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_parent",
+						"name": "_parnet",
 						"type": "address"
 					}
 				],
@@ -269,7 +282,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"DebitCard.sol": "DebitCard"
+			"Manager_flattened.sol": "DebitCard"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -283,36 +296,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"DebitCard.sol": {
-			"keccak256": "0x8039d125efe92d2c1438774f0fb6a21338ea509ede46acbf6990221c7eb38c07",
-			"license": "GPL-3.0",
+		"Manager_flattened.sol": {
+			"keccak256": "0x524ffd2d9a6a6e91dbe444cf72d7731dd4f0efc289e7c8a6245aecebf00fb81f",
 			"urls": [
-				"bzz-raw://28dae30f34e7705688db2299acceb3cd84b193d78b4f8f51723a54e03c00934e",
-				"dweb:/ipfs/QmPujWPEtuGrrWLPCozZ6xnHDuFBesoAgtGceUqvMBmref"
-			]
-		},
-		"Payable.sol": {
-			"keccak256": "0x259ffaffc5e8fe1f053bb0bf3085a34be82cb5c3b911c66c5c03b54a05d89bca",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://dcd9d1b1c49b4e6218c736071be87bc4df4abd28f51a335c97a0f06ac43a8446",
-				"dweb:/ipfs/QmQBGnkRuf2SUL1QJiBefzP7r2mAfky7xQQRsXy5Mwv264"
-			]
-		},
-		"Utils.sol": {
-			"keccak256": "0x73f43b9b448b63e307cc20653c9474c9378cdf01c84c88c58c7c2cd1e922551a",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://1f11e15e73e1adf1cb4e97ae02644d3b40095fff7b4df1eaa44f805d1f491e9d",
-				"dweb:/ipfs/QmTxsaZEDPDSqsxjPc8etBihGzDnJHNZ7p8Fb3M1ZbnCui"
-			]
-		},
-		"VaultItem.sol": {
-			"keccak256": "0xec7ea43d3a81e008667135596936dac701e41c3c5fff2482e8d98f6dd4042158",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://bdb353db6852a3d45998f06d9dea1f8e24b47312223f897c070db715ca16afef",
-				"dweb:/ipfs/QmdcrLQEq1MXVDUuSoq35NQ8eRnqUMGbuDUCM628zN54Q9"
+				"bzz-raw://6b42ea4b0be4630dfa2e002b532b2fa9fe55aa332199dd87b5e09c63de746ae2",
+				"dweb:/ipfs/QmQ25Kq6oKYK7uYxLkz6t1JBd35HmTmF8RX4sdBPc4JAPF"
 			]
 		}
 	},

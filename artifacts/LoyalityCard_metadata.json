@@ -41,7 +41,33 @@
 						"type": "address"
 					}
 				],
+				"name": "AddedToOrganisation",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
 				"name": "Created",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "RemovedFromOrganisation",
 				"type": "event"
 			},
 			{
@@ -77,23 +103,10 @@
 			},
 			{
 				"inputs": [],
-				"name": "getAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "getItemType",
 				"outputs": [
 					{
-						"internalType": "enum Utils.ItemType",
+						"internalType": "enum Constants.ItemType",
 						"name": "",
 						"type": "uint8"
 					}
@@ -185,7 +198,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"LoyalityCard.sol": "LoyalityCard"
+			"Manager_flattened.sol": "LoyalityCard"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -199,36 +212,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"LoyalityCard.sol": {
-			"keccak256": "0x47bf5eac17b9157c8c2e9f287087022d8c7c3f28606ea09b2f36c903d43a8b11",
-			"license": "GPL-3.0",
+		"Manager_flattened.sol": {
+			"keccak256": "0x524ffd2d9a6a6e91dbe444cf72d7731dd4f0efc289e7c8a6245aecebf00fb81f",
 			"urls": [
-				"bzz-raw://881b538de5f396e30a96a3521dec68e0fc7e85c2b4a110b5cbc3748a6b232d90",
-				"dweb:/ipfs/QmSkNcWDnWg8PpDa3trqU3xEbF3KPtih9qmesVtHVDXPmL"
-			]
-		},
-		"Payable.sol": {
-			"keccak256": "0x259ffaffc5e8fe1f053bb0bf3085a34be82cb5c3b911c66c5c03b54a05d89bca",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://dcd9d1b1c49b4e6218c736071be87bc4df4abd28f51a335c97a0f06ac43a8446",
-				"dweb:/ipfs/QmQBGnkRuf2SUL1QJiBefzP7r2mAfky7xQQRsXy5Mwv264"
-			]
-		},
-		"Utils.sol": {
-			"keccak256": "0xb5909ae8406d105e062f20ac220fd8466aef3eff57baa5caefe0bfef848566e6",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://16c46ba0225d607d9a7210f5a1f996f4f04812fbada1178756b298413b8ea0c0",
-				"dweb:/ipfs/Qmc1ah6VHiyBPrG7mwgFonJCPjGWbTpUQzTUArPitjJNZ8"
-			]
-		},
-		"VaultItem.sol": {
-			"keccak256": "0xec7ea43d3a81e008667135596936dac701e41c3c5fff2482e8d98f6dd4042158",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://bdb353db6852a3d45998f06d9dea1f8e24b47312223f897c070db715ca16afef",
-				"dweb:/ipfs/QmdcrLQEq1MXVDUuSoq35NQ8eRnqUMGbuDUCM628zN54Q9"
+				"bzz-raw://6b42ea4b0be4630dfa2e002b532b2fa9fe55aa332199dd87b5e09c63de746ae2",
+				"dweb:/ipfs/QmQ25Kq6oKYK7uYxLkz6t1JBd35HmTmF8RX4sdBPc4JAPF"
 			]
 		}
 	},

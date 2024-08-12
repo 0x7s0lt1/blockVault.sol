@@ -44,6 +44,143 @@
 				],
 				"name": "Created",
 				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum Constants.ItemType",
+						"name": "_type",
+						"type": "uint8"
+					},
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "addItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "addMember",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum Constants.ItemType",
+						"name": "_type",
+						"type": "uint8"
+					},
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "deleteItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum Constants.ItemType",
+						"name": "_type",
+						"type": "uint8"
+					}
+				],
+				"name": "getItems",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMembers",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "addr",
+								"type": "address"
+							}
+						],
+						"internalType": "struct OrgUtils.Member[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isOwn",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "removeMember",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -59,7 +196,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Organisation.sol": "Organisation"
+			"Manager_flattened.sol": "Organisation"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -73,28 +210,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"Organisation.sol": {
-			"keccak256": "0x112271e2099569af406d4c1275b42702ae621cdbd86b7ee201617f7548f9e7f3",
-			"license": "GPL-3.0",
+		"Manager_flattened.sol": {
+			"keccak256": "0x524ffd2d9a6a6e91dbe444cf72d7731dd4f0efc289e7c8a6245aecebf00fb81f",
 			"urls": [
-				"bzz-raw://4e31cf87e26915e2ec68303474988873b791dfa5cfccd2fe615d762a049817a1",
-				"dweb:/ipfs/QmeusdrUURyjqasLguoNrCAygK168CWJDYjYgR5YHoS8NT"
-			]
-		},
-		"Payable.sol": {
-			"keccak256": "0x259ffaffc5e8fe1f053bb0bf3085a34be82cb5c3b911c66c5c03b54a05d89bca",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://dcd9d1b1c49b4e6218c736071be87bc4df4abd28f51a335c97a0f06ac43a8446",
-				"dweb:/ipfs/QmQBGnkRuf2SUL1QJiBefzP7r2mAfky7xQQRsXy5Mwv264"
-			]
-		},
-		"Utils.sol": {
-			"keccak256": "0xb5909ae8406d105e062f20ac220fd8466aef3eff57baa5caefe0bfef848566e6",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://16c46ba0225d607d9a7210f5a1f996f4f04812fbada1178756b298413b8ea0c0",
-				"dweb:/ipfs/Qmc1ah6VHiyBPrG7mwgFonJCPjGWbTpUQzTUArPitjJNZ8"
+				"bzz-raw://6b42ea4b0be4630dfa2e002b532b2fa9fe55aa332199dd87b5e09c63de746ae2",
+				"dweb:/ipfs/QmQ25Kq6oKYK7uYxLkz6t1JBd35HmTmF8RX4sdBPc4JAPF"
 			]
 		}
 	},

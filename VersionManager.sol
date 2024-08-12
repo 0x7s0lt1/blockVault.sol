@@ -43,10 +43,12 @@ contract VersionManager{
         emit Set(_addr);
      }
 
-     function postState(address _manager) external ownerOnly {
+     function postState(address _manager, bool setToCurrent) external ownerOnly {
 
         if( findSate(_manager, states) != -1) revert("Exists");
         states.push(State(block.timestamp, _manager));
+
+        if(setToCurrent) currentManager = _manager;
 
         emit Deployed(_manager);
      }

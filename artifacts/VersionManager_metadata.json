@@ -134,11 +134,11 @@
 	},
 	"sources": {
 		"VersionManager.sol": {
-			"keccak256": "0xeaf9579281ee9f64d24d48bbab45a6ecf64a1eb7d240ff898ba798fa938eefd0",
+			"keccak256": "0xcc276370a2cddb2c02d6a4cdad1601c09c959ec929147d96525f4bd658a4b8bd",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://6676369f19fb04f31c7b55e4cf3a747f887acdc01bb5c2783154ef07c543e3e0",
-				"dweb:/ipfs/QmSs3aTsmEc4mcKUnSZa4EzdzTcoCmYDBCsBZCFi4u15Jf"
+				"bzz-raw://70ee35f72b570084c15f8b5e0112d758aa1636a6f8c4aadbc33b865299dba7e7",
+				"dweb:/ipfs/QmQbb8Frh9pT6LRB4N3xkqDKPBsVKHe94fc34vapWQbzJS"
 			]
 		}
 	},

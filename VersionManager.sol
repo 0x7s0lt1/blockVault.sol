@@ -37,7 +37,7 @@ contract VersionManager{
 
     function setBackTo(address _addr) external ownerOnly {    
 
-        if( findSate(_addr, states) == -1) revert("No index");
+        if( findState(_addr, states) == -1) revert("No index");
         currentManager = _addr;
 
         emit Set(_addr);
@@ -45,7 +45,7 @@ contract VersionManager{
 
      function postState(address _manager, bool setToCurrent) external ownerOnly {
 
-        if( findSate(_manager, states) != -1) revert("Exists");
+        if( findState(_manager, states) != -1) revert("Exists");
         states.push(State(block.timestamp, _manager));
 
         if(setToCurrent) currentManager = _manager;
@@ -53,7 +53,7 @@ contract VersionManager{
         emit Deployed(_manager);
      }
 
-    function findSate(address _value, State[] memory _array) internal pure returns (int) {
+    function findState(address _value, State[] memory _array) internal pure returns (int) {
         for (uint i = 0; i < _array.length; i++) {
             if (_array[i].addr == _value) return int(i);
         }

@@ -8,8 +8,8 @@ library Constants{
     enum ItemType{ LOYALITY_CARD, DEBIT_CARD, PASSWORD }
 
 
-    function isValidItemType(uint8 _type) internal pure returns (bool) {
-        return _type < uint8(ItemType.PASSWORD) + 1;
+    function isValidItemType(uint8 _t) internal pure returns (bool) {
+        return _t < uint8(ItemType.PASSWORD) + 1;
     }
 
     function findAddressIndex(address _addr, address[] memory _a) internal pure returns (int) {
@@ -20,9 +20,9 @@ library Constants{
     } 
 
     function deleteAddressFrom(int idx, address[] storage _a) internal {
-        require(idx >= 0 && uint(idx) < _a.length, "Out of range");
+        require(idx >= 0 && uint(idx) < _a.length, "No idx");
         for (uint i = uint(idx); i < _a.length - 1; i++) {
-                    _a[i] = _a[i + 1];
+            _a[i] = _a[i + 1];
         }
 
         _a.pop();

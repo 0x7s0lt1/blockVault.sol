@@ -76,7 +76,7 @@ contract DebitCard is VaultItem{
         emit Updated(msg.sender);
     }
 
-    function expose() external view ownerOnly returns (string memory, string memory, string memory, uint16, uint16) {
+    function expose() external view ownerOrShared returns (string memory, string memory, string memory, uint16, uint16) {
         return ( name, card_id, name_on_card, expire_at, cvv );
     }
 

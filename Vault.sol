@@ -8,13 +8,12 @@ import "./Items/Password.sol";
 import "./Libs/Constants.sol";
 import "./Libs/VaultUtils.sol";
 import "./Payable.sol";
-import "./Organisation.sol";
 
 contract Vault is Payable{
 
 
     mapping (Constants.ItemType => address[]) Items;
-    address[] Organisations;
+    mapping (Constants.ItemType => address[]) SharedItems;
     
     constructor(address payable _owner, address _manager) Payable( _owner, _manager) {}
     
@@ -63,18 +62,14 @@ contract Vault is Payable{
         VaultUtils.deleteItem( Items, _type, _addr );
     }
 
-    function getOrganisations() external view ownerOnly returns (address[] memory) {
+    function addSharedItem(Constants.ItemType _type, address _addr) external ownerOnly {
 
-        return Organisations;
+        VaultUtils.addSharedItem( _type, SharedItems, _addr);
     }
 
-    function createOrganisation(string memory _name) external ownerOnly {
+    function removeShareditem(Constants.ItemType _type, address _addr) external ownerOnly {
 
-        Organisations.push( address(
-            (new Organisation( _name, owner, address(this)))
-        ));
-
+        VaultUtils.deleteSharedItem( _type, SharedItems, _addr );
     }
-
 
 }

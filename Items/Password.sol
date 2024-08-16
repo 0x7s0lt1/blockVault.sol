@@ -65,7 +65,7 @@ contract Password is VaultItem{
         emit Updated(msg.sender);
     }
     
-    function expose() external view ownerOnly returns ( string memory, string memory, string memory, string memory) {
+    function expose() external view ownerOrShared returns ( string memory, string memory, string memory, string memory) {
         return ( name, url, user_name, password );
     }
 

@@ -51,8 +51,10 @@
 		"methodIdentifiers": {
 			"getItemType()": "2858d3c8",
 			"getParent()": "80f76021",
+			"restictFrom(address)": "ded92dac",
 			"setName(string)": "c47f0027",
-			"setParent(address)": "1499c592"
+			"setParent(address)": "1499c592",
+			"shareWith(address)": "5da6ef8d"
 		}
 	},
 	"abi": [
@@ -137,8 +139,21 @@
 		{
 			"inputs": [
 				{
+					"internalType": "address",
+					"name": "_f",
+					"type": "address"
+				}
+			],
+			"name": "restictFrom",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
 					"internalType": "string",
-					"name": "_name",
+					"name": "_n",
 					"type": "string"
 				}
 			],
@@ -151,11 +166,24 @@
 			"inputs": [
 				{
 					"internalType": "address",
-					"name": "_parnet",
+					"name": "_p",
 					"type": "address"
 				}
 			],
 			"name": "setParent",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_w",
+					"type": "address"
+				}
+			],
+			"name": "shareWith",
 			"outputs": [],
 			"stateMutability": "nonpayable",
 			"type": "function"

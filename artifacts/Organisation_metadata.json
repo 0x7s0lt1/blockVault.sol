@@ -181,6 +181,19 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "setName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -227,11 +240,11 @@
 			]
 		},
 		"Organisation.sol": {
-			"keccak256": "0x1f8e65bd8713756c9814f2ad080523e02d302bba28f368955a83e79fcbe43e69",
+			"keccak256": "0x3141fe8843f29806a85271eae93a8a8ce1c228263a89c2c1139a8130e235e214",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://4346ad085953e7e7f824cb79bccb10bcd933bb13d64e6bf15fe5fa57e2ab9e2a",
-				"dweb:/ipfs/QmdBJjHZ4q33roYARnsMP44ciavRf3E4oqpxFp56xj5P6N"
+				"bzz-raw://1f4cad06cdb4cc73d0968ebf99cc6f55ea77283534af706137337195150df730",
+				"dweb:/ipfs/QmWeiheVZ94pfhK45cYscAPQfMoF2Zt1QSRunfL23jbKXD"
 			]
 		}
 	},

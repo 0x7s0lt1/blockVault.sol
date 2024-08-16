@@ -29,22 +29,22 @@ abstract contract Payable{
         return address(this).balance;
     }
 
-    function withdraw( uint _amount) external payable ownerOnly {
-        require(address(this).balance >= _amount, "Insufficient");
+    function withdraw( uint _a) external payable ownerOnly {
+        require(address(this).balance >= _a, "Insufficient");
 
-        (bool success, ) = owner.call{value: _amount}("");
+        (bool s, ) = owner.call{value: _a}("");
         
-        require(success, "Failed");
+        require(s, "Failed");
 
     }
 
-    function sendTo(address payable _to, uint _amount) external payable ownerOnly {
+    function sendTo(address payable _to, uint _a) external payable ownerOnly {
         require(_to != address(0), "Invalid address");
-        require(address(this).balance >= _amount, "Insufficient");
+        require(address(this).balance >= _a, "Insufficient");
 
-        (bool success, ) = _to.call{value: _amount}("");
+        (bool s, ) = _to.call{value: _a}("");
         
-        require(success, "Failed");
+        require(s, "Failed");
     }
 
 

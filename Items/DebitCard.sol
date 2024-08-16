@@ -61,16 +61,17 @@ contract DebitCard is VaultItem{
     }
 
     function setItem(
-        string memory _name,
-        string memory _card_id,
-        string memory _name_on_card,
-        uint16 _expire_at, uint16 _cvv
+        string memory _n,
+        string memory _c_id,
+        string memory _noc,
+        uint16 _e_at,
+        uint16 _cvv
     ) external ownerOnly {
 
-        name = _name;
-        card_id = _card_id;
-        name_on_card = _name_on_card;
-        expire_at = _expire_at;
+        name = _n;
+        card_id = _c_id;
+        name_on_card = _noc;
+        expire_at = _e_at;
         cvv = _cvv;
 
         emit Updated(msg.sender);

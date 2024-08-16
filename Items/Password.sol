@@ -33,34 +33,34 @@ contract Password is VaultItem{
     }
 
 
-    function setUrl(string memory _url) external ownerOnly {
-        url = _url;
+    function setUrl(string memory _u) external ownerOnly {
+        url = _u;
 
         emit Updated(msg.sender);
     }
 
-    function setUserName(string memory _user_name) external ownerOnly {
-        user_name = _user_name;
+    function setUserName(string memory _un) external ownerOnly {
+        user_name = _un;
 
         emit Updated(msg.sender);
     }
 
-    function setPassword(string memory _password) external ownerOnly {
-        password = _password;
+    function setPassword(string memory _p) external ownerOnly {
+        password = _p;
 
         emit Updated(msg.sender);
     }
 
     function setItem(
-        string memory _name,
-        string memory _url,
-        string memory _user_name,
-        string memory _password
+        string memory _n,
+        string memory _u,
+        string memory _un,
+        string memory _p
     ) external ownerOnly {
-        name = _name;
-        url = _url;
-        user_name = _user_name;
-        password = _password;
+        name = _n;
+        url = _u;
+        user_name = _un;
+        password = _p;
 
         emit Updated(msg.sender);
     }

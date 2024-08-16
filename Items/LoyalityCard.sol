@@ -30,15 +30,15 @@ contract LoyalityCard is VaultItem{
     }
 
 
-    function setCardId(string memory _card_id) external ownerOnly {
-        card_id = _card_id;
+    function setCardId(string memory _c_id) external ownerOnly {
+        card_id = _c_id;
 
         emit Updated(msg.sender);
     }
 
-    function setItem(string memory _name, string memory _card_id) external ownerOnly {
-        name = _name;
-        card_id = _card_id;
+    function setItem(string memory _n, string memory _c_id) external ownerOnly {
+        name = _n;
+        card_id = _c_id;
 
         emit Updated(msg.sender);
     }

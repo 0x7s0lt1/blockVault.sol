@@ -56,7 +56,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Manager_flattened.sol": "Manager"
+			"Manager.sol": "Manager"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -70,11 +70,100 @@
 		"remappings": []
 	},
 	"sources": {
-		"Manager_flattened.sol": {
-			"keccak256": "0x524ffd2d9a6a6e91dbe444cf72d7731dd4f0efc289e7c8a6245aecebf00fb81f",
+		"Interfaces/Item.sol": {
+			"keccak256": "0xb80a056b353307b9a2e269eed5684e63652cdd00f73bcc71d423a966ce895f5f",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://6b42ea4b0be4630dfa2e002b532b2fa9fe55aa332199dd87b5e09c63de746ae2",
-				"dweb:/ipfs/QmQ25Kq6oKYK7uYxLkz6t1JBd35HmTmF8RX4sdBPc4JAPF"
+				"bzz-raw://c9501fb39e2becdf86a9b5c97f5eed4db68ce93294edb9bd623ef7d199f713b4",
+				"dweb:/ipfs/QmQrxv3nvcekoeX8ES6yBc1K6dqcGyVLVFXZopKTQc3nRj"
+			]
+		},
+		"Items/DebitCard.sol": {
+			"keccak256": "0x06b9ad3fa00fffe745f1b8c0ad4827fc60371fd63298bb90f82a26ba7661a2c9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://30e9df77501fdef1b5c35a9417a7d617cc55f91a17a6d1deb4b47deeb838057a",
+				"dweb:/ipfs/QmTufgC2Q3rffjRCEmQPYyjz4x3B1aemVVUYjHdf6ifJuM"
+			]
+		},
+		"Items/LoyalityCard.sol": {
+			"keccak256": "0x5be4d9a4ec0c71ea8c626c01ebfa5c3485b9cd61614c0454c91800eaf104321e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://76e67a5d34a92b37c281b7f393428e0efb0a45ebc740bb1daa3b4ac08247cac8",
+				"dweb:/ipfs/QmQV6hPn2hor1PV2UWPgao2izMofruqGdcSDwZEXHNqFiq"
+			]
+		},
+		"Items/Password.sol": {
+			"keccak256": "0x12f2d1ddcab599f064e2c4aadc60fa814b251b025ce7085a3b2c072919d1c6d4",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://6b2855a5e28a87a49085b456ec72bc8f7ad22d8ec493e7420a3a4c3069daa13a",
+				"dweb:/ipfs/QmVuSHZpQy7TZohxWzRz1C9qvYJz5uB7GFWBs7J6fGRXZ6"
+			]
+		},
+		"Items/VaultItem.sol": {
+			"keccak256": "0x4f5996db64955fcb18cc65a7e5839ffa2d92cdf3f376aed10586551a78882791",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d475e098915743d67fc9f9610353dee043b4dc25fb18e1be5137490b6c66463e",
+				"dweb:/ipfs/QmbaNceoeXLvujbuTaTZkA6MKvre4RKpeToTwuLQUxaaZD"
+			]
+		},
+		"Libs/Constants.sol": {
+			"keccak256": "0x386732f1989ba08535f2a8c9798d01b0b47802b06bda10d94f88e85b497f48c2",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://02bf3bc558c6349c87ba4014cf7b918e7ac1704e58982f8cb75879e62788d6db",
+				"dweb:/ipfs/Qme1Q7W9QwSBBDbPCoyZtfEt4ggxzfBzJRPz6s9LKuMvuU"
+			]
+		},
+		"Libs/OrgUtils.sol": {
+			"keccak256": "0x602524108c0bda39edada20315628e6ae2ef533c39964e32f9d8f0fb43ada987",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bc829867a130cca5f3ab6faa57b5a2d7b16f270978af8afb7921e6f9b1312086",
+				"dweb:/ipfs/Qmbgf5poyxhHWTwU4nFXA47wXJ7BL6WK3ChtFShwncambH"
+			]
+		},
+		"Libs/VaultUtils.sol": {
+			"keccak256": "0x94b30a8fb7bde3094f25b3d519f1d79099273b608e63ee851c52ee71a1245376",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a9dd7fdb484fee6264aac5d188162b2eaad9db4f5d7b11428bc0dc9a5d5c1617",
+				"dweb:/ipfs/QmSiZ6eH4C9FEdeftV13rBX2LddWDGXyDNtHEFeqb2rbir"
+			]
+		},
+		"Manager.sol": {
+			"keccak256": "0x986a69fdf3b1df7bc3ccafcc06b87b5b6dd2e1bfbe1a6b594e02842fff7e4895",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://b21d2ee07457f7b1aa18ef298a377f0c90f2112cd21d810ad6deece46d88e2ce",
+				"dweb:/ipfs/QmVmbbHUCMYdBCxZAsoPdGrexvc2sZ5y7Q7DE3irK1mhmB"
+			]
+		},
+		"Organisation.sol": {
+			"keccak256": "0x1f8e65bd8713756c9814f2ad080523e02d302bba28f368955a83e79fcbe43e69",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4346ad085953e7e7f824cb79bccb10bcd933bb13d64e6bf15fe5fa57e2ab9e2a",
+				"dweb:/ipfs/QmdBJjHZ4q33roYARnsMP44ciavRf3E4oqpxFp56xj5P6N"
+			]
+		},
+		"Payable.sol": {
+			"keccak256": "0x768aab242e9f6367132363a2c9ca17cd71ffe96c269c1a00d9b1b949fe7ab04c",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3de2da25c222c4605a979309a45c5cab7d9c97f528ec665a1502214b71c43b29",
+				"dweb:/ipfs/QmcVdxgn4oZXiWHyVjpehfeg88Be7DoubeFkQzsebrHcBk"
+			]
+		},
+		"Vault.sol": {
+			"keccak256": "0x91e4f3ad60e7c7f7fefdb57a2422404900f948149c03b10cc9cb224dcd8a6b0f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://9239243f9278ac276665737e959cb0afc2d9b84531a6aa5d4e15a90bb39bc233",
+				"dweb:/ipfs/QmfE3HH3FANNUtQZzMyGQmBhFQ1vdnwB6epAEERAGJoqrR"
 			]
 		}
 	},

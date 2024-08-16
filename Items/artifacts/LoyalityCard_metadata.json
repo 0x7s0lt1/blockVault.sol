@@ -41,7 +41,33 @@
 						"type": "address"
 					}
 				],
+				"name": "AddedToOrganisation",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
 				"name": "Created",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "RemovedFromOrganisation",
 				"type": "event"
 			},
 			{
@@ -70,19 +96,6 @@
 						"internalType": "string",
 						"name": "",
 						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -199,36 +212,36 @@
 		"remappings": []
 	},
 	"sources": {
-		"Items/LoyalityCard.sol": {
-			"keccak256": "0x03a72bc07621c16db97ec3402a2f6074bbbd58df97e5f3db8e3622b1a561d4e6",
+		"Interfaces/Item.sol": {
+			"keccak256": "0xb80a056b353307b9a2e269eed5684e63652cdd00f73bcc71d423a966ce895f5f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2db3e8841a15007b4bb2056b1f9b1bc17cdf1e5c8d53a45604703b3ee4019a7c",
-				"dweb:/ipfs/QmcDyQwUjzkhbQAXitBycyb6Sa5EqpRyBAeUiDx36qVnKz"
+				"bzz-raw://c9501fb39e2becdf86a9b5c97f5eed4db68ce93294edb9bd623ef7d199f713b4",
+				"dweb:/ipfs/QmQrxv3nvcekoeX8ES6yBc1K6dqcGyVLVFXZopKTQc3nRj"
+			]
+		},
+		"Items/LoyalityCard.sol": {
+			"keccak256": "0x5be4d9a4ec0c71ea8c626c01ebfa5c3485b9cd61614c0454c91800eaf104321e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://76e67a5d34a92b37c281b7f393428e0efb0a45ebc740bb1daa3b4ac08247cac8",
+				"dweb:/ipfs/QmQV6hPn2hor1PV2UWPgao2izMofruqGdcSDwZEXHNqFiq"
+			]
+		},
+		"Items/VaultItem.sol": {
+			"keccak256": "0x4f5996db64955fcb18cc65a7e5839ffa2d92cdf3f376aed10586551a78882791",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d475e098915743d67fc9f9610353dee043b4dc25fb18e1be5137490b6c66463e",
+				"dweb:/ipfs/QmbaNceoeXLvujbuTaTZkA6MKvre4RKpeToTwuLQUxaaZD"
 			]
 		},
 		"Libs/Constants.sol": {
-			"keccak256": "0x7ae14f7872e672ff504992c939464af18083ab5adff2451231bc8b0cb7c24359",
+			"keccak256": "0x386732f1989ba08535f2a8c9798d01b0b47802b06bda10d94f88e85b497f48c2",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a11843fc26eb0fdb762b2cc8774a22c99b51a0b318e2d177451d6bf014e5dd63",
-				"dweb:/ipfs/QmYFSaoKuCDqhjayqZGTefnGKPndrRX5vXc5mUFgZUd2Ht"
-			]
-		},
-		"Libs/ItemUtils.sol": {
-			"keccak256": "0x7ee3ee73ca55d24e49cbd5505e329dd559d9c872b1979d30c63c1cddae5c44fc",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://9c59cd376935a36fbac8927ecb3c2aa97bc35dd686d18f70d8688a7cdf3203a4",
-				"dweb:/ipfs/QmfRPzQWZnd3QmkmVR8meoQqaDc1c2gXs5nUDPyj64NAJg"
-			]
-		},
-		"VaultItem.sol": {
-			"keccak256": "0x72062922bc1666c4fdbdbee017f3eac15a1ecad614104a29125a4998a7418265",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://915b402c01cf0f41588a36dc6c70cbc128910ec6c01adb3d3c9e5c0170710c7d",
-				"dweb:/ipfs/QmNkN2zzxJeJVwiDR8L8azLtYA3E1fv6eiGiyX94tyB3tQ"
+				"bzz-raw://02bf3bc558c6349c87ba4014cf7b918e7ac1704e58982f8cb75879e62788d6db",
+				"dweb:/ipfs/Qme1Q7W9QwSBBDbPCoyZtfEt4ggxzfBzJRPz6s9LKuMvuU"
 			]
 		}
 	},

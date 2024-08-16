@@ -313,11 +313,11 @@
 			]
 		},
 		"Items/VaultItem.sol": {
-			"keccak256": "0xbd49f3bb5881726e29ecde75d06bf830caccec7fec7843b97ce408cfd2cc6eaa",
+			"keccak256": "0x4f5996db64955fcb18cc65a7e5839ffa2d92cdf3f376aed10586551a78882791",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://33173a70c02ae497f8b56c113fe016cca97d71c43e01bbfa411e5ee66b1e5848",
-				"dweb:/ipfs/QmZooC8rMQp74GzDBXxVRTkDikNgHRF5MkB3icoh1vkVnT"
+				"bzz-raw://d475e098915743d67fc9f9610353dee043b4dc25fb18e1be5137490b6c66463e",
+				"dweb:/ipfs/QmbaNceoeXLvujbuTaTZkA6MKvre4RKpeToTwuLQUxaaZD"
 			]
 		},
 		"Libs/Constants.sol": {

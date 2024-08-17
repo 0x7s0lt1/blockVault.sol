@@ -51,6 +51,7 @@
 		"methodIdentifiers": {
 			"getItemType()": "2858d3c8",
 			"getParent()": "80f76021",
+			"getSharedWith()": "a95264d0",
 			"restictFrom(address)": "ded92dac",
 			"setName(string)": "c47f0027",
 			"setParent(address)": "1499c592",
@@ -131,6 +132,19 @@
 					"internalType": "address",
 					"name": "",
 					"type": "address"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "getSharedWith",
+			"outputs": [
+				{
+					"internalType": "address[]",
+					"name": "",
+					"type": "address[]"
 				}
 			],
 			"stateMutability": "view",

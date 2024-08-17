@@ -160,6 +160,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_f",
+						"type": "address"
+					}
+				],
+				"name": "restictFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "string",
 						"name": "_card_id",
 						"type": "string"
@@ -200,22 +213,22 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_name",
+						"name": "_n",
 						"type": "string"
 					},
 					{
 						"internalType": "string",
-						"name": "_card_id",
+						"name": "_c_id",
 						"type": "string"
 					},
 					{
 						"internalType": "string",
-						"name": "_name_on_card",
+						"name": "_noc",
 						"type": "string"
 					},
 					{
 						"internalType": "uint16",
-						"name": "_expire_at",
+						"name": "_e_at",
 						"type": "uint16"
 					},
 					{
@@ -233,7 +246,7 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_name",
+						"name": "_n",
 						"type": "string"
 					}
 				],
@@ -259,11 +272,24 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_parnet",
+						"name": "_p",
 						"type": "address"
 					}
 				],
 				"name": "setParent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_w",
+						"type": "address"
+					}
+				],
+				"name": "shareWith",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -305,27 +331,27 @@
 			]
 		},
 		"Items/DebitCard.sol": {
-			"keccak256": "0x06b9ad3fa00fffe745f1b8c0ad4827fc60371fd63298bb90f82a26ba7661a2c9",
+			"keccak256": "0x12b4deb3a2b3c525a4046e962dd2952feaccb1ce6b59204dc1127ba7390bcece",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://30e9df77501fdef1b5c35a9417a7d617cc55f91a17a6d1deb4b47deeb838057a",
-				"dweb:/ipfs/QmTufgC2Q3rffjRCEmQPYyjz4x3B1aemVVUYjHdf6ifJuM"
+				"bzz-raw://290a4b087ffad643e709e064b44818c79097497f4ea1e899e069c0a52b2acde1",
+				"dweb:/ipfs/QmSbsooznmU6r7gytvQtPX8BaH6mFQiYmqbFsm6KpQy5Qh"
 			]
 		},
 		"Items/VaultItem.sol": {
-			"keccak256": "0x4f5996db64955fcb18cc65a7e5839ffa2d92cdf3f376aed10586551a78882791",
+			"keccak256": "0xd5cfa2a079ec25c9addad32c0dcf6b92908a0255f288a47d34da714076c63fd1",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://d475e098915743d67fc9f9610353dee043b4dc25fb18e1be5137490b6c66463e",
-				"dweb:/ipfs/QmbaNceoeXLvujbuTaTZkA6MKvre4RKpeToTwuLQUxaaZD"
+				"bzz-raw://890d92fd35930b053bd9fec42b571b7949afc555c784ccb7f0696cd7e9a86260",
+				"dweb:/ipfs/QmSfXwbjf2PNEopCEJALVzuQqpXHW9SQ5HUo9RLwzZKWGZ"
 			]
 		},
 		"Libs/Constants.sol": {
-			"keccak256": "0x386732f1989ba08535f2a8c9798d01b0b47802b06bda10d94f88e85b497f48c2",
+			"keccak256": "0x4a7f80a6d732319d2708f1533076981cbb78ccb02c605e31d208a7db2e63f554",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://02bf3bc558c6349c87ba4014cf7b918e7ac1704e58982f8cb75879e62788d6db",
-				"dweb:/ipfs/Qme1Q7W9QwSBBDbPCoyZtfEt4ggxzfBzJRPz6s9LKuMvuU"
+				"bzz-raw://2ce2e4cb705e0d8d40e31566c8679fafd08c17dd794b3f9cefb209d2b8eb95a5",
+				"dweb:/ipfs/QmNR8UTbzFwjStSLspmrTTmd7cLSk5kh3KxXHwzjxLoaGe"
 			]
 		}
 	},

@@ -58,6 +58,12 @@ abstract contract VaultItem is Item{
         emit Updated(msg.sender);
     }
 
+    function getSharedWith() external view returns (address[] memory) {
+    
+        require( msg.sender == owner || Constants.findAddressIndex( msg.sender, sharedWith ) == -1, "Restrict");
+
+        return sharedWith;
+    }
 
     function shareWith(address _w) external ownerOnly {
 

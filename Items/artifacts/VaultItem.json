@@ -52,6 +52,8 @@
 			"getItemType()": "2858d3c8",
 			"getParent()": "80f76021",
 			"getSharedWith()": "a95264d0",
+			"isOwn()": "b9daf3e2",
+			"isSharedWith()": "4ba83374",
 			"restictFrom(address)": "ded92dac",
 			"setName(string)": "c47f0027",
 			"setParent(address)": "1499c592",
@@ -145,6 +147,32 @@
 					"internalType": "address[]",
 					"name": "",
 					"type": "address[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "isOwn",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "isSharedWith",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
 				}
 			],
 			"stateMutability": "view",

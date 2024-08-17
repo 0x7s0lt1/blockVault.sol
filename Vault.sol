@@ -18,8 +18,13 @@ contract Vault is Payable{
     constructor(address payable _owner, address _manager) Payable( _owner, _manager) {}
     
 
-     function getItem(Constants.ItemType _t) external view ownerOnly returns (address[] memory) {
+    function getItem(Constants.ItemType _t) external view ownerOnly returns (address[] memory) {
         return VaultUtils.getItems(_t, Items);
+    }
+
+    function deleteItem(Constants.ItemType _t, address _a) external ownerOnly {
+
+        VaultUtils.deleteItem( Items, _t, _a );
     }
 
     function createLoyalityCard(string memory _n, string memory _crd_id) external ownerOnly {
@@ -57,9 +62,10 @@ contract Vault is Payable{
         
     }
 
-    function deleteItem(Constants.ItemType _t, address _a) external ownerOnly {
 
-        VaultUtils.deleteItem( Items, _t, _a );
+    function getSharedItems(Constants.ItemType _t) external view ownerOnly returns (address[] memory) {
+        
+        return VaultUtils.getItems(_t, SharedItems);
     }
 
     function addSharedItem(Constants.ItemType _t, address _a) external ownerOnly {
@@ -71,5 +77,6 @@ contract Vault is Payable{
 
         VaultUtils.deleteSharedItem( _t, SharedItems, _a );
     }
+    
 
 }

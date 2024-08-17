@@ -97,6 +97,32 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "isOwn",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isSharedWith",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -185,11 +211,11 @@
 			]
 		},
 		"Items/VaultItem.sol": {
-			"keccak256": "0xb45026062ac203fdc444751a0eb6c0026a0f8610c1a2432df7c8ecfbeed8794d",
+			"keccak256": "0xc4bf4e261ba9b9b513af1d7e3defd2057e18577e9f983a01fbf13c651ef2b3ef",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://8e61c477c92171cee4f30ad5951ce16b6e8a950b1c5b5c53da9951276527d9f8",
-				"dweb:/ipfs/QmRAJb4o85YaZV9N1wvA8DHCQKBYM7bDGvVDVzUzPbjWF7"
+				"bzz-raw://a147780efcd05a029fd941f66ddeabf9320f4498dd56b8c576528d41970b7a88",
+				"dweb:/ipfs/QmWWhCYfrjfGJbGXaXHTJYF6LkvyhxKtL12MG7z32MfaTA"
 			]
 		},
 		"Libs/Constants.sol": {

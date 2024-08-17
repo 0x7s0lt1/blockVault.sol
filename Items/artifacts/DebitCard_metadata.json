@@ -158,6 +158,45 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getSharedWith",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isOwn",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isSharedWith",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -339,11 +378,11 @@
 			]
 		},
 		"Items/VaultItem.sol": {
-			"keccak256": "0xd5cfa2a079ec25c9addad32c0dcf6b92908a0255f288a47d34da714076c63fd1",
+			"keccak256": "0xc4bf4e261ba9b9b513af1d7e3defd2057e18577e9f983a01fbf13c651ef2b3ef",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://890d92fd35930b053bd9fec42b571b7949afc555c784ccb7f0696cd7e9a86260",
-				"dweb:/ipfs/QmSfXwbjf2PNEopCEJALVzuQqpXHW9SQ5HUo9RLwzZKWGZ"
+				"bzz-raw://a147780efcd05a029fd941f66ddeabf9320f4498dd56b8c576528d41970b7a88",
+				"dweb:/ipfs/QmWWhCYfrjfGJbGXaXHTJYF6LkvyhxKtL12MG7z32MfaTA"
 			]
 		},
 		"Libs/Constants.sol": {

@@ -37,6 +37,10 @@ abstract contract VaultItem is Item{
         parent = _p;
     }
 
+    function isOwn() external view  returns (bool) {
+        return msg.sender == owner || msg.sender == parent;
+    }
+
     function getItemType() external view ownerOnly returns (Constants.ItemType) {
         return item_type;
     }
@@ -58,16 +62,18 @@ abstract contract VaultItem is Item{
         emit Updated(msg.sender);
     }
 
-    function getSharedWith() external view returns (address[] memory) {
-    
-        require( msg.sender == owner || Constants.findAddressIndex( msg.sender, sharedWith ) == -1, "Restrict");
+    function isSharedWith() external view returns (bool) {
+        return Constants.findAddressIndex( msg.sender, sharedWith ) != -1;
+    }
 
+    function getSharedWith() external view ownerOnly returns (address[] memory) {
+    
         return sharedWith;
     }
 
     function shareWith(address _w) external ownerOnly {
 
-        require( _w != owner && _w != address(0) && Constants.findAddressIndex( _w, sharedWith ) == -1, "Restrict");
+        require( _w != owner && _w != address(0) && Constants.findAddressIndex( _w, sharedWith ) == -1, "Forbidden");
 
         sharedWith.push(_w);
 
@@ -75,7 +81,7 @@ abstract contract VaultItem is Item{
 
     function restictFrom( address _f ) external {
         
-        require(_f != address(0) || ( msg.sender == parent || msg.sender == owner || msg.sender == _f ), "Restrict");
+        require(_f != address(0) || ( msg.sender == parent || msg.sender == owner || msg.sender == _f ), "Forbidden");
 
         int _idx = Constants.findAddressIndex( _f, sharedWith );
 

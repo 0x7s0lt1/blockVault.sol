@@ -344,11 +344,11 @@
 			]
 		},
 		"Vault.sol": {
-			"keccak256": "0x100e17c62b9808f7697deaff84784791c8828a264980d975c2dc78ab6b0bfbf2",
+			"keccak256": "0x48b2187fa67194235b066aa8597044aa1afa05595c5a1363cf3c3554dfa6fa84",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0bd2c16d9477876dbf3f28857d42241c70aedeab7b4cf85d98adbaf0b7af1652",
-				"dweb:/ipfs/QmXPSGq8cQPifVi2E1hQBvTse7oJguoicZZwd6QSoZakE4"
+				"bzz-raw://b479963bd24882d05010cb66f0ca9b8d943a54dbc1e902c76f5350fe5a0a3f68",
+				"dweb:/ipfs/QmQo8EYSKuJMB1imSS3UzNbD5ue9jaHfnFDnDNqK3bkqa7"
 			]
 		}
 	},

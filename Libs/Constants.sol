@@ -5,7 +5,7 @@ pragma solidity >=0.4.22 <0.9.0;
 
 library Constants{
 
-    enum ItemType{ LOYALITY_CARD, DEBIT_CARD, PASSWORD }
+    enum ItemType{ LOYALITY_CARD, DEBIT_CARD, PASSWORD, CHAT }
 
 
     function isValidItemType(uint8 _t) internal pure returns (bool) {

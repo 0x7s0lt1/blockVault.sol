@@ -3,12 +3,13 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 import "../Interfaces/Item.sol";
+import "../Libs/ItemTypes.sol";
 import "../Libs/Constants.sol";
 
 abstract contract VaultItem is Item{
 
     string name;
-    Constants.ItemType item_type;
+    ItemTypes.Type public item_type;
 
     address owner;
     address parent;
@@ -16,17 +17,17 @@ abstract contract VaultItem is Item{
 
 
     modifier ownerOnly{
-        require(msg.sender == owner || msg.sender == parent, "Only owner");
+        require(msg.sender == owner || msg.sender == parent, "403");
         _;
     }
     modifier ownerOrShared{
-        require( msg.sender == owner || Constants.findAddressIndex( msg.sender, sharedWith ) != -1, "Restrict");
+        require( msg.sender == owner || Constants.findAddressIndex( msg.sender, sharedWith ) != -1, "403");
         _;
     }
 
     constructor(
         string memory _n,
-        Constants.ItemType _item_type,
+        ItemTypes.Type _item_type,
         address _o,
         address _p
     ){
@@ -41,10 +42,6 @@ abstract contract VaultItem is Item{
         return msg.sender == owner || msg.sender == parent;
     }
 
-    function getItemType() external view ownerOnly returns (Constants.ItemType) {
-        return item_type;
-    }
-
     function setName(string memory _n) external ownerOnly {
         name = _n;
 
@@ -54,12 +51,6 @@ abstract contract VaultItem is Item{
     function getParent() external view ownerOnly returns (address) {
 
         return parent;
-    }
-
-    function setParent( address _p) external  ownerOnly {
-        parent = _p;
-
-        emit Updated(msg.sender);
     }
 
     function isSharedWith() external view returns (bool) {
@@ -73,7 +64,7 @@ abstract contract VaultItem is Item{
 
     function shareWith(address _w) external ownerOnly {
 
-        require( _w != owner && _w != address(0) && Constants.findAddressIndex( _w, sharedWith ) == -1, "Forbidden");
+        require( _w != owner && _w != address(0) && Constants.findAddressIndex( _w, sharedWith ) == -1, "403");
 
         sharedWith.push(_w);
 
@@ -81,11 +72,11 @@ abstract contract VaultItem is Item{
 
     function restictFrom( address _f ) external {
         
-        require(_f != address(0) || ( msg.sender == parent || msg.sender == owner || msg.sender == _f ), "Forbidden");
+        require(_f != address(0) || ( msg.sender == parent || msg.sender == owner || msg.sender == _f ), "403");
 
         int _idx = Constants.findAddressIndex( _f, sharedWith );
 
-        require(_idx > -1, "Not found");
+        require(_idx > -1, "404");
 
         Constants.deleteAddressFrom( _idx, sharedWith );
 

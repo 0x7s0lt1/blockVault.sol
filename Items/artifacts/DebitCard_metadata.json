@@ -56,33 +56,7 @@
 						"type": "address"
 					}
 				],
-				"name": "AddedToOrganisation",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
 				"name": "Created",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "RemovedFromOrganisation",
 				"type": "event"
 			},
 			{
@@ -126,19 +100,6 @@
 						"internalType": "uint16",
 						"name": "",
 						"type": "uint16"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getItemType",
-				"outputs": [
-					{
-						"internalType": "enum Constants.ItemType",
-						"name": "",
-						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -191,6 +152,19 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "item_type",
+				"outputs": [
+					{
+						"internalType": "enum Constants.ItemType",
+						"name": "",
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -311,19 +285,6 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_p",
-						"type": "address"
-					}
-				],
-				"name": "setParent",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
 						"name": "_w",
 						"type": "address"
 					}
@@ -362,11 +323,11 @@
 	},
 	"sources": {
 		"Interfaces/Item.sol": {
-			"keccak256": "0xb80a056b353307b9a2e269eed5684e63652cdd00f73bcc71d423a966ce895f5f",
+			"keccak256": "0x2cbaf13bb695f60ea937e1aae36527989752be1ac69476590107a2407eb58c45",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c9501fb39e2becdf86a9b5c97f5eed4db68ce93294edb9bd623ef7d199f713b4",
-				"dweb:/ipfs/QmQrxv3nvcekoeX8ES6yBc1K6dqcGyVLVFXZopKTQc3nRj"
+				"bzz-raw://4f27449641b57505f5325c862d242fefb4bc8409a57b014600395ec154e1636f",
+				"dweb:/ipfs/QmWTfNbonKu2zMJ1av9mo4uKQGTpSecKSPjvwGGMMQDHhz"
 			]
 		},
 		"Items/DebitCard.sol": {
@@ -378,19 +339,19 @@
 			]
 		},
 		"Items/VaultItem.sol": {
-			"keccak256": "0xc4bf4e261ba9b9b513af1d7e3defd2057e18577e9f983a01fbf13c651ef2b3ef",
+			"keccak256": "0x1313d4030c3f67047b2f0cf245bcccc280433effbee02befd410c4ac1cae7687",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a147780efcd05a029fd941f66ddeabf9320f4498dd56b8c576528d41970b7a88",
-				"dweb:/ipfs/QmWWhCYfrjfGJbGXaXHTJYF6LkvyhxKtL12MG7z32MfaTA"
+				"bzz-raw://8d18fea679b00758c7ba79feefd398dc7c7a953c2606364890b514f2df17fd0e",
+				"dweb:/ipfs/QmYFb47z6RahW2Dv5cGoBSPZcRe52fnk2E95UF4nhhHxeD"
 			]
 		},
 		"Libs/Constants.sol": {
-			"keccak256": "0xa9f752fc8d288ceead1e6370f74bc7f78b39270b59978aa25d745e5531679330",
+			"keccak256": "0x0e7d340a9e7fd6cf91433e8da9dff84ce33e52d222704c9cfdfed8de24646133",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://414df7441006fcf60c2f87eb1e21f03fc769695de84d96584854d887709ba87f",
-				"dweb:/ipfs/QmccndHJTDF5Un6YiyswFBKKPbRxvwPpxn4RAanDpCSex3"
+				"bzz-raw://f77b4efa8a8d400c78afb81e64224878e7fb6b86a62fa168b406e7d25ba65c40",
+				"dweb:/ipfs/QmVBNQaQPyNcCgghFU9LmiuDdPnDFoW9gyysMrZfsbQKcs"
 			]
 		}
 	},

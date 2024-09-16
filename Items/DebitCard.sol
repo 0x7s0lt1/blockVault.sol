@@ -3,7 +3,7 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 import "./VaultItem.sol";
-import "../Libs/Constants.sol";
+import "../Libs/ItemTypes.sol";
 
 contract DebitCard is VaultItem{
 
@@ -22,7 +22,7 @@ contract DebitCard is VaultItem{
         address _parent
     ) VaultItem(
         _name,
-        Constants.ItemType.DEBIT_CARD,
+        ItemTypes.Type.DEBIT_CARD,
         _owner,
         _parent
     ){

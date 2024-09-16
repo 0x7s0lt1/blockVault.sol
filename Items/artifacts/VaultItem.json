@@ -49,31 +49,17 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"getItemType()": "2858d3c8",
 			"getParent()": "80f76021",
 			"getSharedWith()": "a95264d0",
 			"isOwn()": "b9daf3e2",
 			"isSharedWith()": "4ba83374",
+			"item_type()": "26c7b327",
 			"restictFrom(address)": "ded92dac",
 			"setName(string)": "c47f0027",
-			"setParent(address)": "1499c592",
 			"shareWith(address)": "5da6ef8d"
 		}
 	},
 	"abi": [
-		{
-			"anonymous": false,
-			"inputs": [
-				{
-					"indexed": false,
-					"internalType": "address",
-					"name": "",
-					"type": "address"
-				}
-			],
-			"name": "AddedToOrganisation",
-			"type": "event"
-		},
 		{
 			"anonymous": false,
 			"inputs": [
@@ -97,34 +83,8 @@
 					"type": "address"
 				}
 			],
-			"name": "RemovedFromOrganisation",
-			"type": "event"
-		},
-		{
-			"anonymous": false,
-			"inputs": [
-				{
-					"indexed": false,
-					"internalType": "address",
-					"name": "",
-					"type": "address"
-				}
-			],
 			"name": "Updated",
 			"type": "event"
-		},
-		{
-			"inputs": [],
-			"name": "getItemType",
-			"outputs": [
-				{
-					"internalType": "enum Constants.ItemType",
-					"name": "",
-					"type": "uint8"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
 		},
 		{
 			"inputs": [],
@@ -179,6 +139,19 @@
 			"type": "function"
 		},
 		{
+			"inputs": [],
+			"name": "item_type",
+			"outputs": [
+				{
+					"internalType": "enum ItemTypes.Type",
+					"name": "",
+					"type": "uint8"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
 			"inputs": [
 				{
 					"internalType": "address",
@@ -200,19 +173,6 @@
 				}
 			],
 			"name": "setName",
-			"outputs": [],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "_p",
-					"type": "address"
-				}
-			],
-			"name": "setParent",
 			"outputs": [],
 			"stateMutability": "nonpayable",
 			"type": "function"

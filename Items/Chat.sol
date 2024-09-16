@@ -3,7 +3,7 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 import "./VaultItem.sol";
-import "../Libs/Constants.sol";
+import "../Libs/ItemTypes.sol";
 
 contract Chat is VaultItem{
 
@@ -18,7 +18,7 @@ contract Chat is VaultItem{
     Message[] messages;
 
     modifier onlyOwnerOrGuest {
-        require(msg.sender == owner || msg.sender == guest, "Not allowed");
+        require(msg.sender == owner || msg.sender == guest, "403");
         _;
     }
 
@@ -31,7 +31,7 @@ contract Chat is VaultItem{
         address _parent
     ) VaultItem(
         _name,
-        Constants.ItemType.CHAT,
+        ItemTypes.Type.CHAT,
         _owner,
         _parent
     ){
@@ -47,17 +47,13 @@ contract Chat is VaultItem{
 
     function sendMessage(string memory _text) external onlyOwnerOrGuest {
 
-
         messages.push(
             Message(block.timestamp, _text, msg.sender)
         );
 
-     
         emit NewMessage(msg.sender, block.timestamp );
     }
 
 
     
-
-
 }

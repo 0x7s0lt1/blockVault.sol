@@ -3,7 +3,7 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 import "./VaultItem.sol";
-import "../Libs/Constants.sol";
+import "../Libs/ItemTypes.sol";
 
 contract Password is VaultItem{
 
@@ -20,7 +20,7 @@ contract Password is VaultItem{
         address _parent
     ) VaultItem(
         _name,
-        Constants.ItemType.PASSWORD,
+        ItemTypes.Type.PASSWORD,
         _owner,
         _parent
     ){

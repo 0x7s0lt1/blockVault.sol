@@ -49,26 +49,11 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"getItemType()": "2858d3c8",
 			"getParent()": "80f76021",
-			"setName(string)": "c47f0027",
-			"setParent(address)": "1499c592"
+			"setName(string)": "c47f0027"
 		}
 	},
 	"abi": [
-		{
-			"anonymous": false,
-			"inputs": [
-				{
-					"indexed": false,
-					"internalType": "address",
-					"name": "",
-					"type": "address"
-				}
-			],
-			"name": "AddedToOrganisation",
-			"type": "event"
-		},
 		{
 			"anonymous": false,
 			"inputs": [
@@ -92,34 +77,8 @@
 					"type": "address"
 				}
 			],
-			"name": "RemovedFromOrganisation",
-			"type": "event"
-		},
-		{
-			"anonymous": false,
-			"inputs": [
-				{
-					"indexed": false,
-					"internalType": "address",
-					"name": "",
-					"type": "address"
-				}
-			],
 			"name": "Updated",
 			"type": "event"
-		},
-		{
-			"inputs": [],
-			"name": "getItemType",
-			"outputs": [
-				{
-					"internalType": "enum Constants.ItemType",
-					"name": "",
-					"type": "uint8"
-				}
-			],
-			"stateMutability": "view",
-			"type": "function"
 		},
 		{
 			"inputs": [],
@@ -143,19 +102,6 @@
 				}
 			],
 			"name": "setName",
-			"outputs": [],
-			"stateMutability": "nonpayable",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "address",
-					"name": "_parent",
-					"type": "address"
-				}
-			],
-			"name": "setParent",
 			"outputs": [],
 			"stateMutability": "nonpayable",
 			"type": "function"

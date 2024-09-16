@@ -1,0 +1,265 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_time",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_parent",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Created",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "Updated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "expose",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getParent",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSharedWith",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isOwn",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isSharedWith",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "item_type",
+				"outputs": [
+					{
+						"internalType": "enum ItemTypes.Type",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_f",
+						"type": "address"
+					}
+				],
+				"name": "restictFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_n",
+						"type": "string"
+					}
+				],
+				"name": "setName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_w",
+						"type": "address"
+					}
+				],
+				"name": "shareWith",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "time",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Items/TimeCapsule.sol": "TimeCapsule"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Interfaces/Item.sol": {
+			"keccak256": "0x2cbaf13bb695f60ea937e1aae36527989752be1ac69476590107a2407eb58c45",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4f27449641b57505f5325c862d242fefb4bc8409a57b014600395ec154e1636f",
+				"dweb:/ipfs/QmWTfNbonKu2zMJ1av9mo4uKQGTpSecKSPjvwGGMMQDHhz"
+			]
+		},
+		"Items/TimeCapsule.sol": {
+			"keccak256": "0x1738cd45fa93310aab26d147f1aad4885c83c5eb98287e6b569923d18afe1ae6",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://458b3fc20c6d75009d5b03e5c20aabf5735d5e1b52422332ba3f676a8d4e19fa",
+				"dweb:/ipfs/QmeHQz7ZUazb88y9uZ8EmdDEkjqP7sShVYoD26XHcrobNw"
+			]
+		},
+		"Items/VaultItem.sol": {
+			"keccak256": "0x2feaef2948a3d96b9663beeeae103532d9647d9c24043651782b1181d075f2be",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://625671b97048c2ee983e8ea8fe5b4de934435dcadf29cc33804b109f8c5224ea",
+				"dweb:/ipfs/QmVjmU9ak2yFH7hJ78GsMHHjyshhcvCPoce9JNLoQvCere"
+			]
+		},
+		"Libs/Constants.sol": {
+			"keccak256": "0xe18d93f0f31b9cde5789885b09b8a572b44a0f1031fed8a8b9fc2085b57dd550",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://65c4fdf97a8a506b219dba8b302cbee8c3a6c81cbcdf613b117d4112ee8441db",
+				"dweb:/ipfs/QmcHqioVaRn35pYwhDLNQi3xw83gSpCPUoU6yP5azkovmx"
+			]
+		},
+		"Libs/ItemTypes.sol": {
+			"keccak256": "0x2ba507140e3f9669d9dc350ddbc3ae517ea450c11cff4a4d0b2f293a26f18d4a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://7970a52b945982d6650ec1c3c2407e2dd81d8a30c3f361a0e0b129f9c893fd3d",
+				"dweb:/ipfs/QmaM8GBZ14qKXn1KsqVmGFCVhNbNVQnrcGqfAnGS8HnG1e"
+			]
+		}
+	},
+	"version": 1
+}

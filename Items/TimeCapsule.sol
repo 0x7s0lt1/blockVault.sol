@@ -3,7 +3,6 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 import "./VaultItem.sol";
-import "../Libs/ItemTypes.sol";
 
 contract TimeCapsule is VaultItem{
 
@@ -17,8 +16,8 @@ contract TimeCapsule is VaultItem{
         address _owner,
         address _parent
     ) VaultItem(
+        4,
         _name,
-        ItemTypes.Type.TIME_CAPSULE,
         _owner,
         _parent
     ){

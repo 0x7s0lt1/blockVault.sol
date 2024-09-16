@@ -2,13 +2,7 @@
 
 pragma solidity >=0.4.22 <0.9.0;
 
-import "./ItemTypes.sol";
-
 library Constants{
-
-    function isValidItemType(uint8 _t) internal pure returns (bool) {
-        return _t < uint8(ItemTypes.Type.TIME_CAPSULE) + 1;
-    }
 
     function findAddressIndex(address _addr, address[] memory _a) internal pure returns (int) {
         for (uint i = 0; i < _a.length; i++) {

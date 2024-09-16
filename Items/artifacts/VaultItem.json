@@ -143,9 +143,9 @@
 			"name": "item_type",
 			"outputs": [
 				{
-					"internalType": "enum ItemTypes.Type",
+					"internalType": "uint256",
 					"name": "",
-					"type": "uint8"
+					"type": "uint256"
 				}
 			],
 			"stateMutability": "view",

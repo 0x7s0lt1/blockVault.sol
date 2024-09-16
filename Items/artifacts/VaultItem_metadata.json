@@ -88,9 +88,9 @@
 				"name": "item_type",
 				"outputs": [
 					{
-						"internalType": "enum ItemTypes.Type",
+						"internalType": "uint256",
 						"name": "",
-						"type": "uint8"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -157,8 +157,8 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
-			"runs": 200
+			"enabled": true,
+			"runs": 10
 		},
 		"remappings": []
 	},
@@ -172,27 +172,19 @@
 			]
 		},
 		"Items/VaultItem.sol": {
-			"keccak256": "0x2feaef2948a3d96b9663beeeae103532d9647d9c24043651782b1181d075f2be",
+			"keccak256": "0x2b04f58881d4def5fb729abf23d03201b54499f08686c32ae4ec7e4edc79a7b7",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://625671b97048c2ee983e8ea8fe5b4de934435dcadf29cc33804b109f8c5224ea",
-				"dweb:/ipfs/QmVjmU9ak2yFH7hJ78GsMHHjyshhcvCPoce9JNLoQvCere"
+				"bzz-raw://d9cb27709cc23139419eb48f41398a887315c5ac29d54662bf52ecbc0903140b",
+				"dweb:/ipfs/QmVaaHJ1TgdoqKAZZwS1Yjqe518kMucFoA4m3AKc1X7xAG"
 			]
 		},
 		"Libs/Constants.sol": {
-			"keccak256": "0x2ca95991e835dfd8cd057722dc82fca916a4949314eec66526e21aea196b6aad",
+			"keccak256": "0xf9e7be8d6ef7f19f3984f7779d7f4401273370d0506024d0057b9e3a6eaa8af0",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://8b86372a1d57e1051c8d719545dcdecfabcf54d91f39e003e8bd668021a58371",
-				"dweb:/ipfs/QmTiHpkLeGfZ3wfjrsvkG2EcNkfZE5gxpQA11fR1CScNbR"
-			]
-		},
-		"Libs/ItemTypes.sol": {
-			"keccak256": "0xdc381808f202aa448ef5874ed4295758d8b70eef77e5e3cbd67073575148d875",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://083a36516471dd5a2875b4dba5fc60949db7b781e6cda864384439add7a13b64",
-				"dweb:/ipfs/QmfJaje9Z26SGV58pcpDSXdW8XpePrpWSKeR1uTvrV1GNt"
+				"bzz-raw://5b55322d131651987ad3d1a894f2c63e3aa8e46ad409188b2f81023bd9ed11bb",
+				"dweb:/ipfs/QmNeMyg2TkPXs2vMJKq7uLHpshYCt3dPELZ3SkzZPMcbcx"
 			]
 		}
 	},

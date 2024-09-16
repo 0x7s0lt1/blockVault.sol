@@ -3,7 +3,6 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 import "./VaultItem.sol";
-import "../Libs/ItemTypes.sol";
 
 contract LoyalityCard is VaultItem{
 
@@ -15,8 +14,8 @@ contract LoyalityCard is VaultItem{
         address _owner,
         address _parent
     ) VaultItem( 
+        0,
         _name,
-        ItemTypes.Type.LOYALITY_CARD,
         _owner,
         _parent
     ){

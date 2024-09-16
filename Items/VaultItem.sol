@@ -3,13 +3,12 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 import "../Interfaces/Item.sol";
-import "../Libs/ItemTypes.sol";
 import "../Libs/Constants.sol";
 
 abstract contract VaultItem is Item{
 
     string name;
-    ItemTypes.Type public item_type;
+    uint public item_type;
 
     address owner;
     address parent;
@@ -26,13 +25,14 @@ abstract contract VaultItem is Item{
     }
 
     constructor(
+        uint _itm_typ,
         string memory _n,
-        ItemTypes.Type _item_type,
         address _o,
         address _p
     ){
+    
+        item_type = _itm_typ;
         name = _n;
-        item_type = _item_type;
 
         owner = _o;
         parent = _p;

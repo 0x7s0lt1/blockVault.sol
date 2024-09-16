@@ -3,7 +3,6 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 import "./VaultItem.sol";
-import "../Libs/ItemTypes.sol";
 
 contract Chat is VaultItem{
 
@@ -22,7 +21,7 @@ contract Chat is VaultItem{
         _;
     }
 
-    event NewMessage(address indexed sender, uint256 timestamp);
+    event NewMessage(address sender, uint256 timestamp);
 
     constructor(
         string memory _name,
@@ -30,8 +29,8 @@ contract Chat is VaultItem{
         address _owner,
         address _parent
     ) VaultItem(
+        3,
         _name,
-        ItemTypes.Type.CHAT,
         _owner,
         _parent
     ){
@@ -45,15 +44,14 @@ contract Chat is VaultItem{
         return messages;
     }
 
-    function sendMessage(string memory _text) external onlyOwnerOrGuest {
+    function sendMessage(string memory _t) external onlyOwnerOrGuest {
 
         messages.push(
-            Message(block.timestamp, _text, msg.sender)
+            Message(block.timestamp, _t, msg.sender)
         );
 
         emit NewMessage(msg.sender, block.timestamp );
     }
-
 
     
 }

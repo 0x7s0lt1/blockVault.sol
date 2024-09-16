@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Libs/VaultUtils.sol": "VaultUtils"
+			"./Libs/VaultUtils.sol": "VaultUtils"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -26,34 +26,26 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
-			"runs": 200
+			"enabled": true,
+			"runs": 10
 		},
 		"remappings": []
 	},
 	"sources": {
+		"./Libs/VaultUtils.sol": {
+			"keccak256": "0x7c00aa6286eb909f145c4b8495137868ba1a60e64ee6cd9840f829f66d4fc209",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://69b62e812b20a2bbffa6db61731eb6dd5273a578086df8e85585d78bed58d791",
+				"dweb:/ipfs/QmUyw5Ze96zw9D9NV2shzbThDi4rMBDcjApaHDXmesme8L"
+			]
+		},
 		"Libs/Constants.sol": {
-			"keccak256": "0x2ca95991e835dfd8cd057722dc82fca916a4949314eec66526e21aea196b6aad",
+			"keccak256": "0xf9e7be8d6ef7f19f3984f7779d7f4401273370d0506024d0057b9e3a6eaa8af0",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://8b86372a1d57e1051c8d719545dcdecfabcf54d91f39e003e8bd668021a58371",
-				"dweb:/ipfs/QmTiHpkLeGfZ3wfjrsvkG2EcNkfZE5gxpQA11fR1CScNbR"
-			]
-		},
-		"Libs/ItemTypes.sol": {
-			"keccak256": "0xdc381808f202aa448ef5874ed4295758d8b70eef77e5e3cbd67073575148d875",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://083a36516471dd5a2875b4dba5fc60949db7b781e6cda864384439add7a13b64",
-				"dweb:/ipfs/QmfJaje9Z26SGV58pcpDSXdW8XpePrpWSKeR1uTvrV1GNt"
-			]
-		},
-		"Libs/VaultUtils.sol": {
-			"keccak256": "0xbf9652ac8fada3d86cc2023425da13369fcf5f5932307d99026ff1944042e055",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://5d0715eab3cdad3060c9364caaa5e14ff2ac5af7ce164640c66064a5bd0fade4",
-				"dweb:/ipfs/QmcqYXpLDJyuyCaVwskZjVirmaWnrkGy5NrfjU5uXfRJZx"
+				"bzz-raw://5b55322d131651987ad3d1a894f2c63e3aa8e46ad409188b2f81023bd9ed11bb",
+				"dweb:/ipfs/QmNeMyg2TkPXs2vMJKq7uLHpshYCt3dPELZ3SkzZPMcbcx"
 			]
 		}
 	},

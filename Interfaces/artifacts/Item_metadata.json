@@ -79,26 +79,18 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
-			"runs": 200
+			"enabled": true,
+			"runs": 10
 		},
 		"remappings": []
 	},
 	"sources": {
 		"Interfaces/Item.sol": {
-			"keccak256": "0x2cbaf13bb695f60ea937e1aae36527989752be1ac69476590107a2407eb58c45",
+			"keccak256": "0xa1d87d3cf9d2e3a7d67abe3b8cfd3cf03331a1d5c5854c81f9a1cde4b8465f2c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://4f27449641b57505f5325c862d242fefb4bc8409a57b014600395ec154e1636f",
-				"dweb:/ipfs/QmWTfNbonKu2zMJ1av9mo4uKQGTpSecKSPjvwGGMMQDHhz"
-			]
-		},
-		"Libs/Constants.sol": {
-			"keccak256": "0x0e7d340a9e7fd6cf91433e8da9dff84ce33e52d222704c9cfdfed8de24646133",
-			"license": "GPL-3.0",
-			"urls": [
-				"bzz-raw://f77b4efa8a8d400c78afb81e64224878e7fb6b86a62fa168b406e7d25ba65c40",
-				"dweb:/ipfs/QmVBNQaQPyNcCgghFU9LmiuDdPnDFoW9gyysMrZfsbQKcs"
+				"bzz-raw://65c799216fb5cc2ee538a9b10aa8b857c11e33afa1ae359d92fddef2fabf72ff",
+				"dweb:/ipfs/QmRw9n9coJLMJZfssN9mZC2T6vu9BoJQVYZMcATvX1b3cT"
 			]
 		}
 	},
